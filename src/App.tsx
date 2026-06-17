@@ -60,7 +60,7 @@ export default function App({ initialData }: AppProps) {
       <main className="dashboard loading">
         <section className="loadingPanel">
           <RadioTower aria-hidden="true" />
-          <h1>World Cup Sweep</h1>
+          <h1>ES WC Sweep</h1>
           <p>{error ?? "Loading live board"}</p>
         </section>
       </main>
@@ -72,7 +72,7 @@ export default function App({ initialData }: AppProps) {
       <header className="topbar">
         <div>
           <p className="eyebrow">Office bragging rights only</p>
-          <h1>World Cup Sweep</h1>
+          <h1>ES WC Sweep</h1>
         </div>
         <div className="statusCluster">
           <span className={`statusPill ${data.status.stale ? "stale" : "live"}`}>
@@ -83,6 +83,12 @@ export default function App({ initialData }: AppProps) {
             <Clock size={16} aria-hidden="true" />
             {topLine}
           </span>
+        </div>
+        <div className="brandBadge" aria-label="Cochlear branding">
+          <img
+            alt="Cochlear"
+            src={`${import.meta.env.BASE_URL}brand/cochlear-logo-horizontal-charcoal.png`}
+          />
         </div>
       </header>
 

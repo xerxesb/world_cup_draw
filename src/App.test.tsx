@@ -58,10 +58,11 @@ describe("App", () => {
   it("renders the leaderboard and stale-data status for the TV dashboard", () => {
     render(<App initialData={dashboardData} />);
 
-    expect(screen.getByRole("heading", { name: /world cup sweep/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "ES WC Sweep" })).toBeInTheDocument();
     expect(screen.getAllByText("Alex Gardner").length).toBeGreaterThan(0);
     expect(screen.getByText("9")).toBeInTheDocument();
     expect(screen.getByText(/stale/i)).toBeInTheDocument();
     expect(screen.getByText("Spreadsheet Champion")).toBeInTheDocument();
+    expect(screen.getByAltText("Cochlear")).toBeInTheDocument();
   });
 });

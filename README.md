@@ -46,3 +46,7 @@ In GitHub, enable Pages with **Source: GitHub Actions**.
 ## Side Awards
 
 Edit `public/data/side-awards.json`. Set `"winner"` to a name when an award is decided; leave it as `null` while it is still in play.
+
+## Brand Assets
+
+The Cochlear logo asset in `public/brand/` is from Cochlear's official media assets page. Attribution: Image courtesy of Cochlear Americas.
