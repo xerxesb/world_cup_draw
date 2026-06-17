@@ -1,0 +1,107 @@
+[
+  {
+    "participant": "Alex Gardner",
+    "tierA": "Belgium",
+    "tierB": "South Korea",
+    "tierC": "Uzbekistan",
+    "bonus": []
+  },
+  {
+    "participant": "Araz Evanian",
+    "tierA": "Spain",
+    "tierB": "Australia",
+    "tierC": "Cape Verde",
+    "bonus": []
+  },
+  {
+    "participant": "Carlin Patel",
+    "tierA": "Brazil",
+    "tierB": "Japan",
+    "tierC": "Tunisia",
+    "bonus": []
+  },
+  {
+    "participant": "David Zhou",
+    "tierA": "Uruguay",
+    "tierB": "Ivory Coast",
+    "tierC": "Qatar",
+    "bonus": []
+  },
+  {
+    "participant": "Fiona McKie",
+    "tierA": "Sweden",
+    "tierB": "Canada",
+    "tierC": "New Zealand",
+    "bonus": []
+  },
+  {
+    "participant": "Himanshu Soni",
+    "tierA": "USA",
+    "tierB": "Scotland",
+    "tierC": "Saudi Arabia",
+    "bonus": []
+  },
+  {
+    "participant": "Jo Williams",
+    "tierA": "France",
+    "tierB": "Senegal",
+    "tierC": "Iraq",
+    "bonus": []
+  },
+  {
+    "participant": "Logan Mackenzie",
+    "tierA": "Netherlands",
+    "tierB": "Morocco",
+    "tierC": "South Africa",
+    "bonus": []
+  },
+  {
+    "participant": "Matthew Lee",
+    "tierA": "England",
+    "tierB": "Iran",
+    "tierC": "Ghana",
+    "bonus": []
+  },
+  {
+    "participant": "Nicole Ward",
+    "tierA": "Mexico",
+    "tierB": "Norway",
+    "tierC": "DR Congo",
+    "bonus": ["Algeria"]
+  },
+  {
+    "participant": "Noman Akbar",
+    "tierA": "Argentina",
+    "tierB": "Ecuador",
+    "tierC": "Haiti",
+    "bonus": []
+  },
+  {
+    "participant": "Phyu Khing",
+    "tierA": "Croatia",
+    "tierB": "Turkey",
+    "tierC": "Egypt",
+    "bonus": []
+  },
+  {
+    "participant": "Vincent Krishna",
+    "tierA": "Colombia",
+    "tierB": "Czechia",
+    "tierC": "Jordan",
+    "bonus": ["Paraguay"]
+  },
+  {
+    "participant": "Xerxes Battiwalla",
+    "tierA": "Germany",
+    "tierB": "Austria",
+    "tierC": "Curacao",
+    "bonus": []
+  },
+  {
+    "participant": "Zach Halstead",
+    "tierA": "Portugal",
+    "tierB": "Switzerland",
+    "tierC": "Panama",
+    "bonus": ["Bosnia and Herzegovina"]
+  }
+]

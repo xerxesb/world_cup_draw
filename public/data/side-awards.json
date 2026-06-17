@@ -1,0 +1,37 @@
+[
+  {
+    "award": "Supreme Overlord",
+    "winnerRule": "Owns the World Cup winner",
+    "winner": null
+  },
+  {
+    "award": "Glorious Almost",
+    "winnerRule": "Owns the runner-up",
+    "winner": null
+  },
+  {
+    "award": "Chaos Merchant",
+    "winnerRule": "Owns the biggest upset",
+    "winner": null
+  },
+  {
+    "award": "Flat Track Bully",
+    "winnerRule": "Owns the biggest winning margin",
+    "winner": null
+  },
+  {
+    "award": "Heroic Failure",
+    "winnerRule": "Owns the worst team",
+    "winner": null
+  },
+  {
+    "award": "VAR Victim",
+    "winnerRule": "Most controversial exit",
+    "winner": null
+  },
+  {
+    "award": "Spreadsheet Champion",
+    "winnerRule": "Person whose teams earn the most total points",
+    "winner": null
+  }
+]
