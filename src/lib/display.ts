@@ -1,21 +1,29 @@
+// FIFA 3-letter codes for names that are too long to fit in a team chip (8+ chars)
 const DISPLAY_NAMES = new Map<string, string>([
-  // Already-mapped long names
-  ["Democratic Republic of the Congo", "DR Congo"],
-  ["Democratic Republic of Congo", "DR Congo"],
-  ["Bosnia and Herzegovina", "Bosnia"],
-  ["Netherlands", "NED"],
-  ["South Korea", "S. Korea"],
-  ["Korea Republic", "S. Korea"],
+  // 8+ character names → FIFA code
+  ["Democratic Republic of the Congo", "COD"],
+  ["Democratic Republic of Congo", "COD"],
+  ["DR Congo", "COD"],
+  ["Bosnia and Herzegovina", "BIH"],
+  ["Czech Republic", "CZE"],
+  ["Czechia", "CZE"],
   ["United States", "USA"],
-  // Long names that clip in compact chip layout
-  ["Czech Republic", "Czechia"],
-  ["South Africa", "S. Africa"],
-  ["Saudi Arabia", "S. Arabia"],
-  ["Switzerland", "Switz."],
-  ["Ivory Coast", "Ivory Cst."],
-  ["New Zealand", "N. Zeal."],
-  ["Cape Verde", "C. Verde"],
-  ["Uzbekistan", "Uzbek."],
+  ["South Africa", "RSA"],
+  ["Saudi Arabia", "KSA"],
+  ["South Korea", "KOR"],
+  ["Korea Republic", "KOR"],
+  ["Switzerland", "SUI"],
+  ["Ivory Coast", "CIV"],
+  ["Netherlands", "NED"],
+  ["New Zealand", "NZL"],
+  ["Cape Verde", "CPV"],
+  ["Uzbekistan", "UZB"],
+  ["Australia", "AUS"],
+  ["Argentina", "ARG"],
+  ["Scotland", "SCO"],
+  ["Paraguay", "PAR"],
+  ["Portugal", "POR"],
+  ["Colombia", "COL"],
 ]);
 
 export function displayTeamName(name: string): string {
