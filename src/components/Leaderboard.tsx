@@ -33,7 +33,7 @@ export function Leaderboard({ rows }: LeaderboardProps) {
                     key={`${row.participant}-${team.tier}-${team.name}`}
                     title={`${team.tier}: ${team.points} pts`}
                   >
-                    <b>{team.tier}</b>
+                    <b>{team.tier === "Bonus" ? "+" : team.tier}</b>
                     {displayTeamName(team.name)}
                   </span>
                 ))}

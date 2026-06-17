@@ -226,28 +226,29 @@ p {
 
 .leaderBody {
   min-width: 0;
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  align-items: center;
-  gap: 8px;
 }
 
 .leaderMain {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   min-width: 0;
 }
 
 .leaderMain strong {
-  display: block;
+  flex: 1;
+  min-width: 0;
   overflow: hidden;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .leaderMain span {
+  flex-shrink: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -260,6 +261,8 @@ p {
   display: flex;
   gap: 4px;
   min-width: 0;
+  margin-top: 2px;
+  overflow: hidden;
 }
 
 .teamChip {
@@ -268,11 +271,11 @@ p {
   gap: 3px;
   min-width: 0;
   max-width: 32%;
-  padding: 2px 4px;
+  padding: 1px 3px;
   border: 1px solid rgba(17, 24, 25, 0.14);
   background: rgba(255, 255, 255, 0.54);
   color: #26302d;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 800;
   line-height: 1.1;
   overflow: hidden;
@@ -282,7 +285,7 @@ p {
 
 .teamChip b {
   color: var(--pitch);
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .teamChip.advancing {
@@ -611,6 +614,10 @@ p {
 }
 
 @media (max-width: 1400px) {
+  .teamChip.bonus {
+    display: none;
+  }
+
   .leaderRow {
     grid-template-columns: 28px minmax(0, 1fr) 42px;
     gap: 6px;
