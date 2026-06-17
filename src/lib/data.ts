@@ -21,17 +21,18 @@ export interface DashboardData {
   status: DashboardStatus;
 }
 
-export type JsonFetcher = (url: string) => Promise<Response>;
+export type JsonFetcher = (url: string, init?: RequestInit) => Promise<Response>;
 
 export async function loadDashboardData(
   fetcher: JsonFetcher = fetch,
   basePath = `${import.meta.env.BASE_URL}data`,
 ): Promise<DashboardData> {
   const normalizedBase = basePath.replace(/\/$/, "");
+  const cacheToken = Date.now();
   const [allocations, awards, liveSnapshot] = await Promise.all([
-    fetchJson<Allocation[]>(fetcher, `${normalizedBase}/allocations.json`),
-    fetchJson<SideAward[]>(fetcher, `${normalizedBase}/side-awards.json`),
-    fetchJson<TournamentSnapshot>(fetcher, `${normalizedBase}/live-data.json`).catch(() => null),
+    fetchJson<Allocation[]>(fetcher, cacheBustedUrl(`${normalizedBase}/allocations.json`, cacheToken)),
+    fetchJson<SideAward[]>(fetcher, cacheBustedUrl(`${normalizedBase}/side-awards.json`, cacheToken)),
+    fetchJson<TournamentSnapshot>(fetcher, cacheBustedUrl(`${normalizedBase}/live-data.json`, cacheToken)).catch(() => null),
   ]);
 
   const snapshot = liveSnapshot ?? makeEmptySnapshot();
@@ -55,13 +56,18 @@ export async function loadDashboardData(
 }
 
 async function fetchJson<T>(fetcher: JsonFetcher, url: string): Promise<T> {
-  const response = await fetcher(url);
+  const response = await fetcher(url, { cache: "no-store" });
 
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}: ${response.status}`);
   }
 
   return response.json() as Promise<T>;
+}
+
+function cacheBustedUrl(url: string, cacheToken: number): string {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}t=${cacheToken}`;
 }
 
 function makeEmptySnapshot(): TournamentSnapshot {

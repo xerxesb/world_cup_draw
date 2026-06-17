@@ -7,6 +7,8 @@ import { MatchBoard } from "./components/MatchBoard";
 import { Ticker } from "./components/Ticker";
 import { loadDashboardData, type DashboardData } from "./lib/data";
 
+const DATA_REFRESH_INTERVAL_MS = 60 * 1000;
+
 interface AppProps {
   initialData?: DashboardData;
 }
@@ -37,7 +39,7 @@ export default function App({ initialData }: AppProps) {
     }
 
     refresh();
-    const interval = window.setInterval(refresh, 5 * 60 * 1000);
+    const interval = window.setInterval(refresh, DATA_REFRESH_INTERVAL_MS);
 
     return () => {
       cancelled = true;

@@ -195,6 +195,7 @@ p {
   display: grid;
   grid-template-rows: repeat(15, minmax(0, 1fr));
   min-height: 0;
+  overflow: hidden;
 }
 
 .leaderRow {
@@ -205,6 +206,7 @@ p {
   min-height: 0;
   padding: 5px 8px;
   border-bottom: 1px solid rgba(17, 24, 25, 0.1);
+  overflow: hidden;
 }
 
 .leaderRow:nth-child(1) {
@@ -605,9 +607,14 @@ p {
 
 @media (max-width: 1400px) {
   .leaderRow {
-    grid-template-columns: 32px minmax(0, 1fr) 42px;
+    grid-template-columns: 28px minmax(0, 1fr) 42px;
     gap: 6px;
-    padding: 3px 7px;
+    padding: 1px 7px;
+  }
+
+  .rank {
+    width: 24px;
+    font-size: 15px;
   }
 
   .leaderBody {
@@ -625,6 +632,7 @@ p {
   .leaderMain strong {
     display: block;
     font-size: 13px;
+    line-height: 1;
   }
 
   .leaderMain span {
@@ -633,6 +641,8 @@ p {
 
   .teamStrip {
     margin-top: 0;
+    align-items: center;
+    overflow: hidden;
   }
 
   .teamChip {
@@ -646,9 +656,10 @@ p {
 
   .scoreBlock strong {
     font-size: 24px;
+    line-height: 1;
   }
 
   .scoreBlock span {
-    font-size: 10px;
+    display: none;
   }
 }

@@ -3,7 +3,7 @@ import { loadDashboardData } from "./data";
 
 describe("loadDashboardData", () => {
   it("loads allocations, awards, snapshot and computed leaderboard", async () => {
-    const fetcher = vi.fn(async (url: string) => {
+    const fetcher = vi.fn(async (url: string, _init?: RequestInit) => {
       const responses: Record<string, unknown> = {
         "allocations.json": [
           {
@@ -43,7 +43,7 @@ describe("loadDashboardData", () => {
 
       return {
         ok: true,
-        json: async () => responses[url.split("/").at(-1) ?? ""],
+        json: async () => responses[fileNameFromUrl(url)],
       } as Response;
     });
 
@@ -56,11 +56,14 @@ describe("loadDashboardData", () => {
       totalPoints: 9,
     }));
     expect(data.status).toEqual(expect.objectContaining({ liveDataAvailable: true, stale: false }));
+    expect(fetcher).toHaveBeenCalledWith(expect.stringMatching(/allocations\.json\?t=\d+/), { cache: "no-store" });
+    expect(fetcher).toHaveBeenCalledWith(expect.stringMatching(/side-awards\.json\?t=\d+/), { cache: "no-store" });
+    expect(fetcher).toHaveBeenCalledWith(expect.stringMatching(/live-data\.json\?t=\d+/), { cache: "no-store" });
   });
 
   it("keeps the dashboard usable when the live snapshot cannot be loaded", async () => {
-    const fetcher = vi.fn(async (url: string) => {
-      if (url.endsWith("live-data.json")) {
+    const fetcher = vi.fn(async (url: string, _init?: RequestInit) => {
+      if (fileNameFromUrl(url) === "live-data.json") {
         return { ok: false, status: 404, json: async () => ({}) } as Response;
       }
 
@@ -79,7 +82,7 @@ describe("loadDashboardData", () => {
 
       return {
         ok: true,
-        json: async () => responses[url.split("/").at(-1) ?? ""],
+        json: async () => responses[fileNameFromUrl(url)],
       } as Response;
     });
 
@@ -90,3 +93,7 @@ describe("loadDashboardData", () => {
     expect(data.status).toEqual(expect.objectContaining({ liveDataAvailable: false, stale: true }));
   });
 });
+
+function fileNameFromUrl(url: string): string {
+  return url.split("/").at(-1)?.split("?")[0] ?? "";
+}
