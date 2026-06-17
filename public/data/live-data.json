@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T18:38:12.213Z",
+  "generatedAt": "2026-06-17T19:32:44.911Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -988,26 +988,26 @@
       "teams": [
         {
           "teamId": "41",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0,
+          "points": 1,
           "position": 1
         },
         {
           "teamId": "42",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0,
+          "points": 1,
           "position": 2
         },
         {
@@ -1935,14 +1935,14 @@
       "id": "61",
       "homeTeamId": "41",
       "awayTeamId": "42",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 1,
       "group": "Group K",
       "matchday": "Matchday 7",
       "kickoff": "2026-06-17T12:00:00-05:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
