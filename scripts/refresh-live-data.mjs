@@ -1,5 +1,6 @@
 import { mkdir, rename, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 import process from "node:process";
 
 const OUTPUT_FILE = resolve("public/data/live-data.json");
@@ -81,13 +82,38 @@ async function fetchJson(url, timeoutMs) {
   }
 }
 
-function normalizeSnapshot(raw) {
-  const teams = (raw.teams ?? []).map((team, index) => ({
+export function collectionFromResponse(value, key) {
+  if (Array.isArray(value)) {
+    return value;
+  }
+
+  if (!value || typeof value !== "object") {
+    return [];
+  }
+
+  const candidates = [
+    value.data,
+    value[key],
+    key === "matches" ? value.games : undefined,
+    key === "matches" ? value.matches : undefined,
+    key === "stadiums" ? value.stadia : undefined,
+    value.results,
+  ];
+
+  return candidates.find(Array.isArray) ?? [];
+}
+
+export function normalizeSnapshot(raw) {
+  const rawTeams = collectionFromResponse(raw.teams, "teams");
+  const rawGroups = collectionFromResponse(raw.groups, "groups");
+  const rawMatches = collectionFromResponse(raw.matches, "matches");
+
+  const teams = rawTeams.map((team, index) => ({
     id: stringValue(team.id ?? team._id?.$oid, String(index + 1)),
     name: stringValue(team.name_en ?? team.name ?? team.country, `Team ${index + 1}`),
   }));
 
-  const groups = (raw.groups ?? []).map((group) => ({
+  const groups = rawGroups.map((group) => ({
     group: stringValue(group.group ?? group.name, "?"),
     teams: (group.teams ?? []).map((team, index) => ({
       teamId: stringValue(team.team_id ?? team.teamId, String(index + 1)),
@@ -103,7 +129,7 @@ function normalizeSnapshot(raw) {
     })),
   }));
 
-  const matches = (raw.matches ?? []).map((match, index) => {
+  const matches = rawMatches.map((match, index) => {
     const finished = match.finished === true || String(match.finished).toUpperCase() === "TRUE";
 
     return {
@@ -181,7 +207,9 @@ function normalizeKickoff(value) {
   return `${year}-${month}-${day}T${hour}:${minute}:00`;
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
