@@ -7,7 +7,7 @@ import { MatchBoard } from "./components/MatchBoard";
 import { Ticker } from "./components/Ticker";
 import { loadDashboardData, type DashboardData } from "./lib/data";
 
-const DATA_REFRESH_INTERVAL_MS = 60 * 1000;
+const DATA_REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 
 interface AppProps {
   initialData?: DashboardData;

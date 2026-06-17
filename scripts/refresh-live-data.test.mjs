@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { collectionFromResponse, normalizeSnapshot } from "./refresh-live-data.mjs";
+import { collectionFromResponse, normalizeApiSnapshot as normalizeSnapshot } from "./refresh-live-data.mjs";
 
 describe("collectionFromResponse", () => {
   it("accepts raw arrays and common API envelope shapes", () => {

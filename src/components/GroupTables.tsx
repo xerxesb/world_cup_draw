@@ -27,7 +27,7 @@ export function GroupTables({ snapshot, leaderboard }: GroupTablesProps) {
       <div className="groupGrid">
         {relevantGroups.map((group) => (
           <article className="groupTable" key={group.group}>
-            <h3>Group {group.group}</h3>
+            <h3>{group.group.startsWith("Group ") ? group.group : `Group ${group.group}`}</h3>
             {group.teams.slice(0, 4).map((standing) => {
               const name = teamById.get(standing.teamId) ?? standing.teamId;
               const owned = ownedTeamNames.has(name.toLowerCase());

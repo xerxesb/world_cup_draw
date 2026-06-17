@@ -1,4 +1,4 @@
-import { CalendarDays, Goal, Radio } from "lucide-react";
+import { CalendarDays, Goal, Radio, Zap } from "lucide-react";
 import { displayTeamName } from "../lib/display";
 import type { Match, TournamentSnapshot } from "../lib/tournament";
 
@@ -6,21 +6,39 @@ interface MatchBoardProps {
   snapshot: TournamentSnapshot;
 }
 
+const MATCH_DURATION_MS = 2.5 * 60 * 60 * 1000; // 2.5 hours covers 90min + extra time + breaks
+
 export function MatchBoard({ snapshot }: MatchBoardProps) {
   const teamById = new Map(snapshot.teams.map((team) => [team.id, team.name]));
   const now = Date.now();
   const sortedMatches = [...snapshot.matches].sort((a, b) => matchTime(a) - matchTime(b));
+
+  // Live: kickoff has passed but match not finished and within 2.5h window
+  const live = sortedMatches.filter((m) => {
+    if (m.finished) return false;
+    const t = matchTime(m);
+    return t !== Number.MAX_SAFE_INTEGER && t <= now && now - t <= MATCH_DURATION_MS;
+  });
+
   const recent = sortedMatches.filter((match) => match.finished).slice(-4).reverse();
   const upcoming = sortedMatches.filter((match) => !match.finished && matchTime(match) >= now).slice(0, 5);
-  const featured = upcoming[0] ?? [...recent].reverse()[0] ?? sortedMatches[0] ?? null;
+  const featured = live[0] ?? upcoming[0] ?? [...recent].reverse()[0] ?? sortedMatches[0] ?? null;
+
+  const featuredLabel = featured
+    ? live.includes(featured)
+      ? "Live now"
+      : featured.finished
+        ? "Latest result"
+        : formatKickoff(featured.kickoff)
+    : "Fixtures loading";
 
   return (
     <section className="centerStage">
       <article className="featureMatch panel">
         <div className="panelHeader compact">
           <div>
-            <p className="eyebrow">Next whistle</p>
-            <h2>{featured ? matchLabel(featured) : "Fixtures loading"}</h2>
+            <p className="eyebrow">{live.length > 0 ? "🔴 In progress" : "Next whistle"}</p>
+            <h2>{featuredLabel}</h2>
           </div>
           <Radio aria-hidden="true" />
         </div>
@@ -34,6 +52,16 @@ export function MatchBoard({ snapshot }: MatchBoardProps) {
           <p className="emptyText">No fixture data yet</p>
         )}
       </article>
+
+      {live.length > 1 && (
+        <section className="panel liveNowPanel">
+          <div className="panelHeader compact">
+            <h2>Also live</h2>
+            <Zap aria-hidden="true" />
+          </div>
+          <MatchList matches={live.slice(1)} teamById={teamById} empty="" />
+        </section>
+      )}
 
       <div className="matchGrid">
         <section className="panel">
@@ -74,7 +102,7 @@ function MatchList({
   empty: string;
 }) {
   if (matches.length === 0) {
-    return <p className="emptyText">{empty}</p>;
+    return empty ? <p className="emptyText">{empty}</p> : null;
   }
 
   return (
@@ -97,14 +125,6 @@ function MatchList({
 function matchTime(match: Match): number {
   const date = match.kickoff ? new Date(match.kickoff) : null;
   return date && !Number.isNaN(date.getTime()) ? date.getTime() : Number.MAX_SAFE_INTEGER;
-}
-
-function matchLabel(match: Match): string {
-  if (match.finished) {
-    return "Latest result";
-  }
-
-  return formatKickoff(match.kickoff);
 }
 
 function formatKickoff(value: string | null): string {
