@@ -226,35 +226,40 @@ p {
 
 .leaderBody {
   min-width: 0;
-}
-
-.leaderMain {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
   gap: 8px;
 }
 
+.leaderMain {
+  display: block;
+  min-width: 0;
+}
+
 .leaderMain strong {
+  display: block;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.leaderMain span,
-.scoreBlock span {
+.leaderMain span {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.scoreBlock span {
+  display: none;
 }
 
 .teamStrip {
   display: flex;
   gap: 4px;
   min-width: 0;
-  margin-top: 3px;
 }
 
 .teamChip {
@@ -297,8 +302,8 @@ p {
 
 .scoreBlock strong {
   display: block;
-  font-size: 30px;
-  line-height: 0.9;
+  font-size: 26px;
+  line-height: 1;
 }
 
 .centerStage {
