@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T21:28:22.052Z",
+  "generatedAt": "2026-06-17T22:15:44.530Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -1041,27 +1041,15 @@
       "teams": [
         {
           "teamId": "45",
-          "played": 0,
-          "won": 0,
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2,
+          "points": 3,
           "position": 1
-        },
-        {
-          "teamId": "46",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "position": 2
         },
         {
           "teamId": "47",
@@ -1073,7 +1061,7 @@
           "goalsAgainst": 0,
           "goalDifference": 0,
           "points": 0,
-          "position": 3
+          "position": 2
         },
         {
           "teamId": "48",
@@ -1084,6 +1072,18 @@
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "teamId": "46",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDifference": -2,
           "points": 0,
           "position": 4
         }
@@ -2019,14 +2019,14 @@
       "id": "67",
       "homeTeamId": "45",
       "awayTeamId": "46",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 2,
       "group": "Group L",
       "matchday": "Matchday 7",
       "kickoff": "2026-06-17T15:00:00-05:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
