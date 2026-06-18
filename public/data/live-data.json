@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T20:59:21.576Z",
+  "generatedAt": "2026-06-18T21:50:18.228Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -510,19 +510,19 @@
       "group": "Group B",
       "teams": [
         {
-          "teamId": "5",
-          "played": 1,
-          "won": 0,
+          "teamId": "8",
+          "played": 2,
+          "won": 1,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3,
+          "points": 4,
           "position": 1
         },
         {
-          "teamId": "6",
+          "teamId": "5",
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -546,14 +546,14 @@
           "position": 3
         },
         {
-          "teamId": "8",
-          "played": 1,
+          "teamId": "6",
+          "played": 2,
           "won": 0,
           "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3,
           "points": 1,
           "position": 4
         }
@@ -1207,14 +1207,14 @@
       "id": "9",
       "homeTeamId": "8",
       "awayTeamId": "6",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 4,
+      "awayScore": 1,
       "group": "Group B",
       "matchday": "Matchday 8",
       "kickoff": "2026-06-18T12:00:00-07:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
