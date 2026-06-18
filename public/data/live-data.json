@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T03:52:42.401Z",
+  "generatedAt": "2026-06-18T05:48:16.737Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -987,19 +987,19 @@
       "group": "Group K",
       "teams": [
         {
-          "teamId": "41",
+          "teamId": "44",
           "played": 1,
-          "won": 0,
-          "drawn": 1,
+          "won": 1,
+          "drawn": 0,
           "lost": 0,
-          "goalsFor": 1,
+          "goalsFor": 3,
           "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1,
+          "goalDifference": 2,
+          "points": 3,
           "position": 1
         },
         {
-          "teamId": "42",
+          "teamId": "41",
           "played": 1,
           "won": 0,
           "drawn": 1,
@@ -1011,26 +1011,26 @@
           "position": 2
         },
         {
-          "teamId": "43",
-          "played": 0,
+          "teamId": "42",
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0,
-          "points": 0,
+          "points": 1,
           "position": 3
         },
         {
-          "teamId": "44",
-          "played": 0,
+          "teamId": "43",
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
+          "goalDifference": -2,
           "points": 0,
           "position": 4
         }
@@ -1949,14 +1949,14 @@
       "id": "62",
       "homeTeamId": "43",
       "awayTeamId": "44",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 3,
       "group": "Group K",
       "matchday": "Matchday 7",
       "kickoff": "2026-06-17T20:00:00-06:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
