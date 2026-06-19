@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-19T20:39:41.635Z",
+  "generatedAt": "2026-06-19T21:12:02.400Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -617,25 +617,25 @@
       "teams": [
         {
           "teamId": "13",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 6,
           "goalsAgainst": 1,
-          "goalDifference": 3,
-          "points": 3,
+          "goalDifference": 5,
+          "points": 6,
           "position": 1
         },
         {
           "teamId": "15",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
+          "lost": 1,
           "goalsFor": 2,
-          "goalsAgainst": 0,
-          "goalDifference": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
           "points": 3,
           "position": 2
         },
@@ -1375,14 +1375,14 @@
       "id": "21",
       "homeTeamId": "13",
       "awayTeamId": "15",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 0,
       "group": "Group D",
       "matchday": "Matchday 9",
       "kickoff": "2026-06-19T12:00:00-07:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
