@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T23:40:00.999Z",
+  "generatedAt": "2026-06-19T00:16:41.744Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -510,6 +510,18 @@
       "group": "Group B",
       "teams": [
         {
+          "teamId": "5",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 1,
+          "goalDifference": 6,
+          "points": 4,
+          "position": 1
+        },
+        {
           "teamId": "8",
           "played": 2,
           "won": 1,
@@ -519,31 +531,7 @@
           "goalsAgainst": 2,
           "goalDifference": 3,
           "points": 4,
-          "position": 1
-        },
-        {
-          "teamId": "5",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1,
           "position": 2
-        },
-        {
-          "teamId": "7",
-          "played": 1,
-          "won": 0,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 1,
-          "position": 3
         },
         {
           "teamId": "6",
@@ -554,6 +542,18 @@
           "goalsFor": 2,
           "goalsAgainst": 5,
           "goalDifference": -3,
+          "points": 1,
+          "position": 3
+        },
+        {
+          "teamId": "7",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
           "points": 1,
           "position": 4
         }
@@ -1221,14 +1221,14 @@
       "id": "10",
       "homeTeamId": "5",
       "awayTeamId": "7",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 6,
+      "awayScore": 0,
       "group": "Group B",
       "matchday": "Matchday 8",
       "kickoff": "2026-06-18T15:00:00-07:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
