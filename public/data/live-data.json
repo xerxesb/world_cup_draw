@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T21:36:16.238Z",
+  "generatedAt": "2026-06-20T22:11:44.507Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -670,25 +670,25 @@
       "teams": [
         {
           "teamId": "17",
-          "played": 1,
-          "won": 1,
+          "played": 2,
+          "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 1,
-          "goalDifference": 6,
-          "points": 3,
+          "goalsFor": 9,
+          "goalsAgainst": 2,
+          "goalDifference": 7,
+          "points": 6,
           "position": 1
         },
         {
           "teamId": "19",
-          "played": 1,
+          "played": 2,
           "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
           "points": 3,
           "position": 2
         },
@@ -1459,14 +1459,14 @@
       "id": "27",
       "homeTeamId": "17",
       "awayTeamId": "19",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 1,
       "group": "Group E",
       "matchday": "Matchday 10",
       "kickoff": "2026-06-20T16:00:00-04:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
