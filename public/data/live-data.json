@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T01:25:57.322Z",
+  "generatedAt": "2026-06-21T02:26:22.264Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -385,26 +385,26 @@
         },
         {
           "teamId": "20",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 0,
           "goalsAgainst": 1,
           "goalDifference": -1,
-          "points": 0,
+          "points": 1,
           "position": 3
         },
         {
           "teamId": "18",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
           "goalsFor": 1,
           "goalsAgainst": 7,
           "goalDifference": -6,
-          "points": 0,
+          "points": 1,
           "position": 4
         }
       ]
@@ -1307,8 +1307,8 @@
       "matchday": "2",
       "kickoff": "2026-06-20T19:00:00",
       "stadiumId": "6",
-      "finished": false,
-      "status": "live",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
