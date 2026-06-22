@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T23:37:08.834Z",
+  "generatedAt": "2026-06-22T00:12:14.230Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -841,26 +841,26 @@
         },
         {
           "teamId": "32",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
           "goalDifference": 0,
-          "points": 1,
+          "points": 2,
           "position": 2
         },
         {
           "teamId": "30",
-          "played": 1,
+          "played": 2,
           "won": 0,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
           "goalDifference": 0,
-          "points": 1,
+          "points": 2,
           "position": 3
         },
         {
@@ -1725,14 +1725,14 @@
       "id": "46",
       "homeTeamId": "32",
       "awayTeamId": "30",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 2,
+      "awayScore": 2,
       "group": "Group H",
       "matchday": "Matchday 11",
       "kickoff": "2026-06-21T18:00:00-04:00",
       "stadiumId": null,
-      "finished": false,
-      "status": "notstarted",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
