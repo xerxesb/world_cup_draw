@@ -1,111 +1,19 @@
 {
-  "generatedAt": "2026-06-24T13:00:01.182Z",
+  "generatedAt": "2026-06-24T13:51:36.700Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
+    {
+      "id": "1",
+      "name": "Mexico"
+    },
     {
       "id": "2",
       "name": "South Africa"
     },
     {
-      "id": "9",
-      "name": "Brazil"
-    },
-    {
-      "id": "12",
-      "name": "Scotland"
-    },
-    {
-      "id": "16",
-      "name": "Turkey"
-    },
-    {
-      "id": "19",
-      "name": "Ivory Coast"
-    },
-    {
-      "id": "21",
-      "name": "Netherlands"
-    },
-    {
-      "id": "30",
-      "name": "Cape Verde"
-    },
-    {
-      "id": "33",
-      "name": "France"
-    },
-    {
-      "id": "24",
-      "name": "Tunisia"
-    },
-    {
-      "id": "26",
-      "name": "Egypt"
-    },
-    {
-      "id": "35",
-      "name": "Iraq"
-    },
-    {
-      "id": "41",
-      "name": "Portugal"
-    },
-    {
-      "id": "43",
-      "name": "Uzbekistan"
-    },
-    {
-      "id": "44",
-      "name": "Colombia"
-    },
-    {
-      "id": "20",
-      "name": "Ecuador"
-    },
-    {
-      "id": "22",
-      "name": "Japan"
-    },
-    {
-      "id": "28",
-      "name": "New Zealand"
-    },
-    {
-      "id": "31",
-      "name": "Saudi Arabia"
-    },
-    {
-      "id": "39",
-      "name": "Austria"
-    },
-    {
-      "id": "47",
-      "name": "Ghana"
-    },
-    {
       "id": "3",
       "name": "South Korea"
-    },
-    {
-      "id": "29",
-      "name": "Spain"
-    },
-    {
-      "id": "36",
-      "name": "Norway"
-    },
-    {
-      "id": "37",
-      "name": "Argentina"
-    },
-    {
-      "id": "42",
-      "name": "Democratic Republic of the Congo"
-    },
-    {
-      "id": "45",
-      "name": "England"
     },
     {
       "id": "4",
@@ -116,6 +24,10 @@
       "name": "Canada"
     },
     {
+      "id": "6",
+      "name": "Bosnia and Herzegovina"
+    },
+    {
       "id": "7",
       "name": "Qatar"
     },
@@ -124,180 +36,321 @@
       "name": "Switzerland"
     },
     {
+      "id": "9",
+      "name": "Brazil"
+    },
+    {
       "id": "10",
       "name": "Morocco"
-    },
-    {
-      "id": "14",
-      "name": "Paraguay"
-    },
-    {
-      "id": "18",
-      "name": "Curaçao"
-    },
-    {
-      "id": "23",
-      "name": "Sweden"
-    },
-    {
-      "id": "38",
-      "name": "Algeria"
-    },
-    {
-      "id": "40",
-      "name": "Jordan"
     },
     {
       "id": "11",
       "name": "Haiti"
     },
     {
-      "id": "17",
-      "name": "Germany"
-    },
-    {
-      "id": "32",
-      "name": "Uruguay"
-    },
-    {
-      "id": "34",
-      "name": "Senegal"
-    },
-    {
-      "id": "48",
-      "name": "Panama"
-    },
-    {
-      "id": "1",
-      "name": "Mexico"
-    },
-    {
-      "id": "6",
-      "name": "Bosnia and Herzegovina"
+      "id": "12",
+      "name": "Scotland"
     },
     {
       "id": "13",
       "name": "United States"
     },
     {
+      "id": "14",
+      "name": "Paraguay"
+    },
+    {
       "id": "15",
       "name": "Australia"
+    },
+    {
+      "id": "16",
+      "name": "Turkey"
+    },
+    {
+      "id": "17",
+      "name": "Germany"
+    },
+    {
+      "id": "18",
+      "name": "Curaçao"
+    },
+    {
+      "id": "19",
+      "name": "Ivory Coast"
+    },
+    {
+      "id": "20",
+      "name": "Ecuador"
+    },
+    {
+      "id": "21",
+      "name": "Netherlands"
+    },
+    {
+      "id": "22",
+      "name": "Japan"
+    },
+    {
+      "id": "23",
+      "name": "Sweden"
+    },
+    {
+      "id": "24",
+      "name": "Tunisia"
     },
     {
       "id": "25",
       "name": "Belgium"
     },
     {
+      "id": "26",
+      "name": "Egypt"
+    },
+    {
       "id": "27",
       "name": "Iran"
     },
     {
+      "id": "28",
+      "name": "New Zealand"
+    },
+    {
+      "id": "29",
+      "name": "Spain"
+    },
+    {
+      "id": "30",
+      "name": "Cape Verde"
+    },
+    {
+      "id": "31",
+      "name": "Saudi Arabia"
+    },
+    {
+      "id": "32",
+      "name": "Uruguay"
+    },
+    {
+      "id": "33",
+      "name": "France"
+    },
+    {
+      "id": "34",
+      "name": "Senegal"
+    },
+    {
+      "id": "35",
+      "name": "Iraq"
+    },
+    {
+      "id": "36",
+      "name": "Norway"
+    },
+    {
+      "id": "37",
+      "name": "Argentina"
+    },
+    {
+      "id": "38",
+      "name": "Algeria"
+    },
+    {
+      "id": "39",
+      "name": "Austria"
+    },
+    {
+      "id": "40",
+      "name": "Jordan"
+    },
+    {
+      "id": "41",
+      "name": "Portugal"
+    },
+    {
+      "id": "42",
+      "name": "Democratic Republic of the Congo"
+    },
+    {
+      "id": "43",
+      "name": "Uzbekistan"
+    },
+    {
+      "id": "44",
+      "name": "Colombia"
+    },
+    {
+      "id": "45",
+      "name": "England"
+    },
+    {
       "id": "46",
       "name": "Croatia"
+    },
+    {
+      "id": "47",
+      "name": "Ghana"
+    },
+    {
+      "id": "48",
+      "name": "Panama"
     }
   ],
   "groups": [
     {
-      "group": "H",
+      "group": "A",
       "teams": [
         {
-          "teamId": "29",
+          "teamId": "1",
           "played": 2,
-          "won": 1,
-          "drawn": 1,
+          "won": 2,
+          "drawn": 0,
           "lost": 0,
-          "goalsFor": 4,
+          "goalsFor": 3,
           "goalsAgainst": 0,
-          "goalDifference": 4,
-          "points": 4,
+          "goalDifference": 3,
+          "points": 6,
           "position": 1
         },
         {
-          "teamId": "32",
+          "teamId": "3",
           "played": 2,
-          "won": 0,
-          "drawn": 2,
-          "lost": 0,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
-          "goalDifference": 0,
-          "points": 2,
-          "position": 2
-        },
-        {
-          "teamId": "30",
-          "played": 2,
-          "won": 0,
-          "drawn": 2,
-          "lost": 0,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0,
-          "points": 2,
+          "points": 3,
+          "position": 2
+        },
+        {
+          "teamId": "4",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1,
+          "points": 1,
           "position": 3
         },
         {
-          "teamId": "31",
+          "teamId": "2",
           "played": 2,
           "won": 0,
           "drawn": 1,
           "lost": 1,
           "goalsFor": 1,
-          "goalsAgainst": 5,
-          "goalDifference": -4,
+          "goalsAgainst": 3,
+          "goalDifference": -2,
           "points": 1,
           "position": 4
         }
       ]
     },
     {
-      "group": "I",
+      "group": "B",
       "teams": [
         {
-          "teamId": "33",
+          "teamId": "5",
           "played": 2,
-          "won": 2,
-          "drawn": 0,
+          "won": 1,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 6,
+          "goalsFor": 7,
           "goalsAgainst": 1,
-          "goalDifference": 5,
-          "points": 6,
+          "goalDifference": 6,
+          "points": 4,
           "position": 1
         },
         {
-          "teamId": "36",
+          "teamId": "8",
           "played": 2,
-          "won": 2,
-          "drawn": 0,
+          "won": 1,
+          "drawn": 1,
           "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 3,
-          "goalDifference": 4,
-          "points": 6,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3,
+          "points": 4,
           "position": 2
         },
         {
-          "teamId": "34",
+          "teamId": "6",
           "played": 2,
           "won": 0,
-          "drawn": 0,
-          "lost": 2,
-          "goalsFor": 3,
-          "goalsAgainst": 6,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
           "goalDifference": -3,
-          "points": 0,
+          "points": 1,
           "position": 3
         },
         {
-          "teamId": "35",
+          "teamId": "7",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
+          "points": 1,
+          "position": 4
+        }
+      ]
+    },
+    {
+      "group": "C",
+      "teams": [
+        {
+          "teamId": "9",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3,
+          "points": 4,
+          "position": 1
+        },
+        {
+          "teamId": "10",
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "points": 4,
+          "position": 2
+        },
+        {
+          "teamId": "12",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0,
+          "points": 3,
+          "position": 3
+        },
+        {
+          "teamId": "11",
           "played": 2,
           "won": 0,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 1,
-          "goalsAgainst": 7,
-          "goalDifference": -6,
+          "goalsFor": 0,
+          "goalsAgainst": 4,
+          "goalDifference": -4,
           "points": 0,
           "position": 4
         }
@@ -516,159 +569,159 @@
       ]
     },
     {
-      "group": "A",
+      "group": "H",
       "teams": [
         {
-          "teamId": "1",
-          "played": 2,
-          "won": 2,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 3,
-          "goalsAgainst": 0,
-          "goalDifference": 3,
-          "points": 6,
-          "position": 1
-        },
-        {
-          "teamId": "3",
-          "played": 2,
-          "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 3,
-          "position": 2
-        },
-        {
-          "teamId": "4",
-          "played": 2,
-          "won": 0,
-          "drawn": 1,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 3,
-          "goalDifference": -1,
-          "points": 1,
-          "position": 3
-        },
-        {
-          "teamId": "2",
-          "played": 2,
-          "won": 0,
-          "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
-          "points": 1,
-          "position": 4
-        }
-      ]
-    },
-    {
-      "group": "B",
-      "teams": [
-        {
-          "teamId": "5",
-          "played": 2,
-          "won": 1,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 1,
-          "goalDifference": 6,
-          "points": 4,
-          "position": 1
-        },
-        {
-          "teamId": "8",
-          "played": 2,
-          "won": 1,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 2,
-          "goalDifference": 3,
-          "points": 4,
-          "position": 2
-        },
-        {
-          "teamId": "6",
-          "played": 2,
-          "won": 0,
-          "drawn": 1,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 5,
-          "goalDifference": -3,
-          "points": 1,
-          "position": 3
-        },
-        {
-          "teamId": "7",
-          "played": 2,
-          "won": 0,
-          "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 7,
-          "goalDifference": -6,
-          "points": 1,
-          "position": 4
-        }
-      ]
-    },
-    {
-      "group": "L",
-      "teams": [
-        {
-          "teamId": "45",
+          "teamId": "29",
           "played": 2,
           "won": 1,
           "drawn": 1,
           "lost": 0,
           "goalsFor": 4,
-          "goalsAgainst": 2,
-          "goalDifference": 2,
+          "goalsAgainst": 0,
+          "goalDifference": 4,
           "points": 4,
           "position": 1
         },
         {
-          "teamId": "47",
+          "teamId": "32",
           "played": 2,
-          "won": 1,
-          "drawn": 1,
+          "won": 0,
+          "drawn": 2,
           "lost": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1,
-          "points": 4,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDifference": 0,
+          "points": 2,
           "position": 2
         },
         {
-          "teamId": "46",
+          "teamId": "30",
+          "played": 2,
+          "won": 0,
+          "drawn": 2,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0,
+          "points": 2,
+          "position": 3
+        },
+        {
+          "teamId": "31",
+          "played": 2,
+          "won": 0,
+          "drawn": 1,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "goalDifference": -4,
+          "points": 1,
+          "position": 4
+        }
+      ]
+    },
+    {
+      "group": "I",
+      "teams": [
+        {
+          "teamId": "33",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5,
+          "points": 6,
+          "position": 1
+        },
+        {
+          "teamId": "36",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "points": 6,
+          "position": 2
+        },
+        {
+          "teamId": "34",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDifference": -3,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "teamId": "35",
+          "played": 2,
+          "won": 0,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
+          "goalDifference": -6,
+          "points": 0,
+          "position": 4
+        }
+      ]
+    },
+    {
+      "group": "J",
+      "teams": [
+        {
+          "teamId": "37",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 0,
+          "goalDifference": 5,
+          "points": 6,
+          "position": 1
+        },
+        {
+          "teamId": "39",
           "played": 2,
           "won": 1,
           "drawn": 0,
           "lost": 1,
           "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDifference": 0,
+          "points": 3,
+          "position": 2
+        },
+        {
+          "teamId": "38",
+          "played": 2,
+          "won": 1,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 2,
           "goalsAgainst": 4,
-          "goalDifference": -1,
+          "goalDifference": -2,
           "points": 3,
           "position": 3
         },
         {
-          "teamId": "48",
+          "teamId": "40",
           "played": 2,
           "won": 0,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 2,
-          "goalDifference": -2,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3,
           "points": 0,
           "position": 4
         }
@@ -728,106 +781,53 @@
       ]
     },
     {
-      "group": "C",
+      "group": "L",
       "teams": [
         {
-          "teamId": "9",
+          "teamId": "45",
           "played": 2,
           "won": 1,
           "drawn": 1,
           "lost": 0,
           "goalsFor": 4,
-          "goalsAgainst": 1,
-          "goalDifference": 3,
+          "goalsAgainst": 2,
+          "goalDifference": 2,
           "points": 4,
           "position": 1
         },
         {
-          "teamId": "10",
+          "teamId": "47",
           "played": 2,
           "won": 1,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
           "goalDifference": 1,
           "points": 4,
           "position": 2
         },
         {
-          "teamId": "12",
-          "played": 2,
-          "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0,
-          "points": 3,
-          "position": 3
-        },
-        {
-          "teamId": "11",
-          "played": 2,
-          "won": 0,
-          "drawn": 0,
-          "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 4,
-          "goalDifference": -4,
-          "points": 0,
-          "position": 4
-        }
-      ]
-    },
-    {
-      "group": "J",
-      "teams": [
-        {
-          "teamId": "37",
-          "played": 2,
-          "won": 2,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 0,
-          "goalDifference": 5,
-          "points": 6,
-          "position": 1
-        },
-        {
-          "teamId": "39",
+          "teamId": "46",
           "played": 2,
           "won": 1,
           "drawn": 0,
           "lost": 1,
           "goalsFor": 3,
-          "goalsAgainst": 3,
-          "goalDifference": 0,
-          "points": 3,
-          "position": 2
-        },
-        {
-          "teamId": "38",
-          "played": 2,
-          "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 2,
           "goalsAgainst": 4,
-          "goalDifference": -2,
+          "goalDifference": -1,
           "points": 3,
           "position": 3
         },
         {
-          "teamId": "40",
+          "teamId": "48",
           "played": 2,
           "won": 0,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 2,
-          "goalsAgainst": 5,
-          "goalDifference": -3,
+          "goalsFor": 0,
+          "goalsAgainst": 2,
+          "goalDifference": -2,
           "points": 0,
           "position": 4
         }
@@ -835,76 +835,6 @@
     }
   ],
   "matches": [
-    {
-      "id": "1",
-      "homeTeamId": "1",
-      "awayTeamId": "2",
-      "homeScore": 2,
-      "awayScore": 0,
-      "group": "A",
-      "matchday": "1",
-      "kickoff": "2026-06-11T13:00:00",
-      "stadiumId": "1",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "2",
-      "homeTeamId": "3",
-      "awayTeamId": "4",
-      "homeScore": 2,
-      "awayScore": 1,
-      "group": "A",
-      "matchday": "1",
-      "kickoff": "2026-06-11T20:00:00",
-      "stadiumId": "2",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "3",
-      "homeTeamId": "5",
-      "awayTeamId": "6",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "B",
-      "matchday": "1",
-      "kickoff": "2026-06-12T15:00:00",
-      "stadiumId": "12",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "4",
-      "homeTeamId": "13",
-      "awayTeamId": "14",
-      "homeScore": 4,
-      "awayScore": 1,
-      "group": "D",
-      "matchday": "1",
-      "kickoff": "2026-06-12T18:00:00",
-      "stadiumId": "16",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "5",
-      "homeTeamId": "11",
-      "awayTeamId": "12",
-      "homeScore": 0,
-      "awayScore": 1,
-      "group": "C",
-      "matchday": "1",
-      "kickoff": "2026-06-13T21:00:00",
-      "stadiumId": "9",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
     {
       "id": "6",
       "homeTeamId": "15",
@@ -915,20 +845,6 @@
       "matchday": "1",
       "kickoff": "2026-06-13T21:00:00",
       "stadiumId": "13",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "7",
-      "homeTeamId": "9",
-      "awayTeamId": "10",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "C",
-      "matchday": "1",
-      "kickoff": "2026-06-13T18:00:00",
-      "stadiumId": "11",
       "finished": true,
       "status": "finished",
       "type": "group"
@@ -948,314 +864,6 @@
       "type": "group"
     },
     {
-      "id": "9",
-      "homeTeamId": "19",
-      "awayTeamId": "20",
-      "homeScore": 1,
-      "awayScore": 0,
-      "group": "E",
-      "matchday": "1",
-      "kickoff": "2026-06-14T19:00:00",
-      "stadiumId": "10",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "10",
-      "homeTeamId": "17",
-      "awayTeamId": "18",
-      "homeScore": 7,
-      "awayScore": 1,
-      "group": "E",
-      "matchday": "1",
-      "kickoff": "2026-06-14T12:00:00",
-      "stadiumId": "5",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "11",
-      "homeTeamId": "21",
-      "awayTeamId": "22",
-      "homeScore": 2,
-      "awayScore": 2,
-      "group": "F",
-      "matchday": "1",
-      "kickoff": "2026-06-14T15:00:00",
-      "stadiumId": "4",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "12",
-      "homeTeamId": "23",
-      "awayTeamId": "24",
-      "homeScore": 5,
-      "awayScore": 1,
-      "group": "F",
-      "matchday": "1",
-      "kickoff": "2026-06-14T20:00:00",
-      "stadiumId": "3",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "13",
-      "homeTeamId": "27",
-      "awayTeamId": "28",
-      "homeScore": 2,
-      "awayScore": 2,
-      "group": "G",
-      "matchday": "1",
-      "kickoff": "2026-06-15T18:00:00",
-      "stadiumId": "16",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "14",
-      "homeTeamId": "29",
-      "awayTeamId": "30",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "H",
-      "matchday": "1",
-      "kickoff": "2026-06-15T12:00:00",
-      "stadiumId": "7",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "15",
-      "homeTeamId": "25",
-      "awayTeamId": "26",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "G",
-      "matchday": "1",
-      "kickoff": "2026-06-15T12:00:00",
-      "stadiumId": "14",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "16",
-      "homeTeamId": "31",
-      "awayTeamId": "32",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "H",
-      "matchday": "1",
-      "kickoff": "2026-06-15T18:00:00",
-      "stadiumId": "8",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "17",
-      "homeTeamId": "33",
-      "awayTeamId": "34",
-      "homeScore": 3,
-      "awayScore": 1,
-      "group": "I",
-      "matchday": "1",
-      "kickoff": "2026-06-16T15:00:00",
-      "stadiumId": "11",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "18",
-      "homeTeamId": "35",
-      "awayTeamId": "36",
-      "homeScore": 1,
-      "awayScore": 4,
-      "group": "I",
-      "matchday": "1",
-      "kickoff": "2026-06-16T18:00:00",
-      "stadiumId": "9",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "19",
-      "homeTeamId": "37",
-      "awayTeamId": "38",
-      "homeScore": 3,
-      "awayScore": 0,
-      "group": "J",
-      "matchday": "1",
-      "kickoff": "2026-06-16T20:00:00",
-      "stadiumId": "6",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "20",
-      "homeTeamId": "39",
-      "awayTeamId": "40",
-      "homeScore": 3,
-      "awayScore": 1,
-      "group": "J",
-      "matchday": "1",
-      "kickoff": "2026-06-16T21:00:00",
-      "stadiumId": "15",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "21",
-      "homeTeamId": "41",
-      "awayTeamId": "42",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "K",
-      "matchday": "1",
-      "kickoff": "2026-06-17T12:00:00",
-      "stadiumId": "5",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "22",
-      "homeTeamId": "45",
-      "awayTeamId": "46",
-      "homeScore": 4,
-      "awayScore": 2,
-      "group": "L",
-      "matchday": "1",
-      "kickoff": "2026-06-17T15:00:00",
-      "stadiumId": "4",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "23",
-      "homeTeamId": "43",
-      "awayTeamId": "44",
-      "homeScore": 1,
-      "awayScore": 3,
-      "group": "K",
-      "matchday": "1",
-      "kickoff": "2026-06-17T20:00:00",
-      "stadiumId": "1",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "24",
-      "homeTeamId": "47",
-      "awayTeamId": "48",
-      "homeScore": 1,
-      "awayScore": 0,
-      "group": "L",
-      "matchday": "1",
-      "kickoff": "2026-06-17T19:00:00",
-      "stadiumId": "12",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "25",
-      "homeTeamId": "1",
-      "awayTeamId": "3",
-      "homeScore": 1,
-      "awayScore": 0,
-      "group": "A",
-      "matchday": "2",
-      "kickoff": "2026-06-18T19:00:00",
-      "stadiumId": "2",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "26",
-      "homeTeamId": "8",
-      "awayTeamId": "6",
-      "homeScore": 4,
-      "awayScore": 1,
-      "group": "B",
-      "matchday": "2",
-      "kickoff": "2026-06-18T12:00:00",
-      "stadiumId": "16",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "27",
-      "homeTeamId": "5",
-      "awayTeamId": "7",
-      "homeScore": 6,
-      "awayScore": 0,
-      "group": "B",
-      "matchday": "2",
-      "kickoff": "2026-06-18T15:00:00",
-      "stadiumId": "13",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "28",
-      "homeTeamId": "4",
-      "awayTeamId": "2",
-      "homeScore": 1,
-      "awayScore": 1,
-      "group": "A",
-      "matchday": "2",
-      "kickoff": "2026-06-18T12:00:00",
-      "stadiumId": "7",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "29",
-      "homeTeamId": "9",
-      "awayTeamId": "11",
-      "homeScore": 3,
-      "awayScore": 0,
-      "group": "C",
-      "matchday": "2",
-      "kickoff": "2026-06-19T21:00:00",
-      "stadiumId": "10",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "30",
-      "homeTeamId": "12",
-      "awayTeamId": "10",
-      "homeScore": 0,
-      "awayScore": 1,
-      "group": "C",
-      "matchday": "2",
-      "kickoff": "2026-06-19T18:00:00",
-      "stadiumId": "9",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
       "id": "31",
       "homeTeamId": "13",
       "awayTeamId": "15",
@@ -1265,20 +873,6 @@
       "matchday": "2",
       "kickoff": "2026-06-19T12:00:00",
       "stadiumId": "14",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "32",
-      "homeTeamId": "16",
-      "awayTeamId": "14",
-      "homeScore": 0,
-      "awayScore": 1,
-      "group": "D",
-      "matchday": "2",
-      "kickoff": "2026-06-19T20:00:00",
-      "stadiumId": "15",
       "finished": true,
       "status": "finished",
       "type": "group"
@@ -1298,20 +892,6 @@
       "type": "group"
     },
     {
-      "id": "34",
-      "homeTeamId": "20",
-      "awayTeamId": "18",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "E",
-      "matchday": "2",
-      "kickoff": "2026-06-20T19:00:00",
-      "stadiumId": "6",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
       "id": "35",
       "homeTeamId": "21",
       "awayTeamId": "23",
@@ -1321,76 +901,6 @@
       "matchday": "2",
       "kickoff": "2026-06-20T12:00:00",
       "stadiumId": "5",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "36",
-      "homeTeamId": "24",
-      "awayTeamId": "22",
-      "homeScore": 0,
-      "awayScore": 4,
-      "group": "F",
-      "matchday": "2",
-      "kickoff": "2026-06-20T22:00:00",
-      "stadiumId": "3",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "37",
-      "homeTeamId": "25",
-      "awayTeamId": "27",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "G",
-      "matchday": "2",
-      "kickoff": "2026-06-21T12:00:00",
-      "stadiumId": "16",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "38",
-      "homeTeamId": "28",
-      "awayTeamId": "26",
-      "homeScore": 1,
-      "awayScore": 3,
-      "group": "G",
-      "matchday": "2",
-      "kickoff": "2026-06-21T18:00:00",
-      "stadiumId": "13",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "39",
-      "homeTeamId": "29",
-      "awayTeamId": "31",
-      "homeScore": 4,
-      "awayScore": 0,
-      "group": "H",
-      "matchday": "2",
-      "kickoff": "2026-06-21T12:00:00",
-      "stadiumId": "7",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "40",
-      "homeTeamId": "32",
-      "awayTeamId": "30",
-      "homeScore": 2,
-      "awayScore": 2,
-      "group": "H",
-      "matchday": "2",
-      "kickoff": "2026-06-21T18:00:00",
-      "stadiumId": "8",
       "finished": true,
       "status": "finished",
       "type": "group"
@@ -1424,15 +934,99 @@
       "type": "group"
     },
     {
-      "id": "43",
-      "homeTeamId": "37",
-      "awayTeamId": "39",
-      "homeScore": 2,
+      "id": "59",
+      "homeTeamId": "22",
+      "awayTeamId": "23",
+      "homeScore": 0,
       "awayScore": 0,
-      "group": "J",
-      "matchday": "2",
-      "kickoff": "2026-06-22T12:00:00",
+      "group": "F",
+      "matchday": "3",
+      "kickoff": "2026-06-25T18:00:00",
       "stadiumId": "4",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "95",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-07T12:00:00",
+      "stadiumId": "7",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "101",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "SF",
+      "matchday": "7",
+      "kickoff": "2026-07-14T14:00:00",
+      "stadiumId": "4",
+      "finished": false,
+      "status": "notstarted",
+      "type": "sf"
+    },
+    {
+      "id": "102",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "SF",
+      "matchday": "7",
+      "kickoff": "2026-07-15T15:00:00",
+      "stadiumId": "7",
+      "finished": false,
+      "status": "notstarted",
+      "type": "sf"
+    },
+    {
+      "id": "5",
+      "homeTeamId": "11",
+      "awayTeamId": "12",
+      "homeScore": 0,
+      "awayScore": 1,
+      "group": "C",
+      "matchday": "1",
+      "kickoff": "2026-06-13T21:00:00",
+      "stadiumId": "9",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "22",
+      "homeTeamId": "45",
+      "awayTeamId": "46",
+      "homeScore": 4,
+      "awayScore": 2,
+      "group": "L",
+      "matchday": "1",
+      "kickoff": "2026-06-17T15:00:00",
+      "stadiumId": "4",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "39",
+      "homeTeamId": "29",
+      "awayTeamId": "31",
+      "homeScore": 4,
+      "awayScore": 0,
+      "group": "H",
+      "matchday": "2",
+      "kickoff": "2026-06-21T12:00:00",
+      "stadiumId": "7",
       "finished": true,
       "status": "finished",
       "type": "group"
@@ -1480,76 +1074,6 @@
       "type": "group"
     },
     {
-      "id": "47",
-      "homeTeamId": "44",
-      "awayTeamId": "42",
-      "homeScore": 1,
-      "awayScore": 0,
-      "group": "K",
-      "matchday": "2",
-      "kickoff": "2026-06-23T20:00:00",
-      "stadiumId": "2",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "48",
-      "homeTeamId": "45",
-      "awayTeamId": "47",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "L",
-      "matchday": "2",
-      "kickoff": "2026-06-23T16:00:00",
-      "stadiumId": "9",
-      "finished": true,
-      "status": "finished",
-      "type": "group"
-    },
-    {
-      "id": "49",
-      "homeTeamId": "12",
-      "awayTeamId": "9",
-      "homeScore": null,
-      "awayScore": null,
-      "group": "C",
-      "matchday": "3",
-      "kickoff": "2026-06-24T18:00:00",
-      "stadiumId": "8",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "50",
-      "homeTeamId": "10",
-      "awayTeamId": "11",
-      "homeScore": null,
-      "awayScore": null,
-      "group": "C",
-      "matchday": "3",
-      "kickoff": "2026-06-24T18:00:00",
-      "stadiumId": "7",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "51",
-      "homeTeamId": "2",
-      "awayTeamId": "3",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "A",
-      "matchday": "3",
-      "kickoff": "2026-06-24T19:00:00",
-      "stadiumId": "3",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
       "id": "52",
       "homeTeamId": "4",
       "awayTeamId": "1",
@@ -1559,104 +1083,6 @@
       "matchday": "3",
       "kickoff": "2026-06-24T19:00:00",
       "stadiumId": "1",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "53",
-      "homeTeamId": "6",
-      "awayTeamId": "7",
-      "homeScore": null,
-      "awayScore": null,
-      "group": "B",
-      "matchday": "3",
-      "kickoff": "2026-06-24T12:00:00",
-      "stadiumId": "14",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "54",
-      "homeTeamId": "8",
-      "awayTeamId": "5",
-      "homeScore": null,
-      "awayScore": null,
-      "group": "B",
-      "matchday": "3",
-      "kickoff": "2026-06-24T12:00:00",
-      "stadiumId": "13",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "55",
-      "homeTeamId": "18",
-      "awayTeamId": "19",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "E",
-      "matchday": "3",
-      "kickoff": "2026-06-25T16:00:00",
-      "stadiumId": "10",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "56",
-      "homeTeamId": "20",
-      "awayTeamId": "17",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "E",
-      "matchday": "3",
-      "kickoff": "2026-06-25T16:00:00",
-      "stadiumId": "11",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "57",
-      "homeTeamId": "14",
-      "awayTeamId": "15",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "D",
-      "matchday": "3",
-      "kickoff": "2026-06-25T19:00:00",
-      "stadiumId": "15",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "58",
-      "homeTeamId": "16",
-      "awayTeamId": "13",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "D",
-      "matchday": "3",
-      "kickoff": "2026-06-25T19:00:00",
-      "stadiumId": "16",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "59",
-      "homeTeamId": "22",
-      "awayTeamId": "23",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "F",
-      "matchday": "3",
-      "kickoff": "2026-06-25T18:00:00",
-      "stadiumId": "4",
       "finished": false,
       "status": "notstarted",
       "type": "group"
@@ -1690,6 +1116,370 @@
       "type": "group"
     },
     {
+      "id": "67",
+      "homeTeamId": "48",
+      "awayTeamId": "45",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "L",
+      "matchday": "3",
+      "kickoff": "2026-06-27T17:00:00",
+      "stadiumId": "11",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "72",
+      "homeTeamId": "42",
+      "awayTeamId": "43",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "K",
+      "matchday": "3",
+      "kickoff": "2026-06-27T19:30:00",
+      "stadiumId": "7",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "86",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-03T18:00:00",
+      "stadiumId": "8",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "88",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-03T13:00:00",
+      "stadiumId": "4",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "100",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "QF",
+      "matchday": "6",
+      "kickoff": "2026-07-11T20:00:00",
+      "stadiumId": "6",
+      "finished": false,
+      "status": "notstarted",
+      "type": "qf"
+    },
+    {
+      "id": "2",
+      "homeTeamId": "3",
+      "awayTeamId": "4",
+      "homeScore": 2,
+      "awayScore": 1,
+      "group": "A",
+      "matchday": "1",
+      "kickoff": "2026-06-11T20:00:00",
+      "stadiumId": "2",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "4",
+      "homeTeamId": "13",
+      "awayTeamId": "14",
+      "homeScore": 4,
+      "awayScore": 1,
+      "group": "D",
+      "matchday": "1",
+      "kickoff": "2026-06-12T18:00:00",
+      "stadiumId": "16",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "17",
+      "homeTeamId": "33",
+      "awayTeamId": "34",
+      "homeScore": 3,
+      "awayScore": 1,
+      "group": "I",
+      "matchday": "1",
+      "kickoff": "2026-06-16T15:00:00",
+      "stadiumId": "11",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "18",
+      "homeTeamId": "35",
+      "awayTeamId": "36",
+      "homeScore": 1,
+      "awayScore": 4,
+      "group": "I",
+      "matchday": "1",
+      "kickoff": "2026-06-16T18:00:00",
+      "stadiumId": "9",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "21",
+      "homeTeamId": "41",
+      "awayTeamId": "42",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "K",
+      "matchday": "1",
+      "kickoff": "2026-06-17T12:00:00",
+      "stadiumId": "5",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "37",
+      "homeTeamId": "25",
+      "awayTeamId": "27",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "G",
+      "matchday": "2",
+      "kickoff": "2026-06-21T12:00:00",
+      "stadiumId": "16",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "50",
+      "homeTeamId": "10",
+      "awayTeamId": "11",
+      "homeScore": null,
+      "awayScore": null,
+      "group": "C",
+      "matchday": "3",
+      "kickoff": "2026-06-24T18:00:00",
+      "stadiumId": "7",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "51",
+      "homeTeamId": "2",
+      "awayTeamId": "3",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "A",
+      "matchday": "3",
+      "kickoff": "2026-06-24T19:00:00",
+      "stadiumId": "3",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "87",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-03T20:30:00",
+      "stadiumId": "6",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "98",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "QF",
+      "matchday": "6",
+      "kickoff": "2026-07-10T12:00:00",
+      "stadiumId": "16",
+      "finished": false,
+      "status": "notstarted",
+      "type": "qf"
+    },
+    {
+      "id": "9",
+      "homeTeamId": "19",
+      "awayTeamId": "20",
+      "homeScore": 1,
+      "awayScore": 0,
+      "group": "E",
+      "matchday": "1",
+      "kickoff": "2026-06-14T19:00:00",
+      "stadiumId": "10",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "10",
+      "homeTeamId": "17",
+      "awayTeamId": "18",
+      "homeScore": 7,
+      "awayScore": 1,
+      "group": "E",
+      "matchday": "1",
+      "kickoff": "2026-06-14T12:00:00",
+      "stadiumId": "5",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "12",
+      "homeTeamId": "23",
+      "awayTeamId": "24",
+      "homeScore": 5,
+      "awayScore": 1,
+      "group": "F",
+      "matchday": "1",
+      "kickoff": "2026-06-14T20:00:00",
+      "stadiumId": "3",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "25",
+      "homeTeamId": "1",
+      "awayTeamId": "3",
+      "homeScore": 1,
+      "awayScore": 0,
+      "group": "A",
+      "matchday": "2",
+      "kickoff": "2026-06-18T19:00:00",
+      "stadiumId": "2",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "27",
+      "homeTeamId": "5",
+      "awayTeamId": "7",
+      "homeScore": 6,
+      "awayScore": 0,
+      "group": "B",
+      "matchday": "2",
+      "kickoff": "2026-06-18T15:00:00",
+      "stadiumId": "13",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "30",
+      "homeTeamId": "12",
+      "awayTeamId": "10",
+      "homeScore": 0,
+      "awayScore": 1,
+      "group": "C",
+      "matchday": "2",
+      "kickoff": "2026-06-19T18:00:00",
+      "stadiumId": "9",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "32",
+      "homeTeamId": "16",
+      "awayTeamId": "14",
+      "homeScore": 0,
+      "awayScore": 1,
+      "group": "D",
+      "matchday": "2",
+      "kickoff": "2026-06-19T20:00:00",
+      "stadiumId": "15",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "43",
+      "homeTeamId": "37",
+      "awayTeamId": "39",
+      "homeScore": 2,
+      "awayScore": 0,
+      "group": "J",
+      "matchday": "2",
+      "kickoff": "2026-06-22T12:00:00",
+      "stadiumId": "4",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "49",
+      "homeTeamId": "12",
+      "awayTeamId": "9",
+      "homeScore": null,
+      "awayScore": null,
+      "group": "C",
+      "matchday": "3",
+      "kickoff": "2026-06-24T18:00:00",
+      "stadiumId": "8",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "53",
+      "homeTeamId": "6",
+      "awayTeamId": "7",
+      "homeScore": null,
+      "awayScore": null,
+      "group": "B",
+      "matchday": "3",
+      "kickoff": "2026-06-24T12:00:00",
+      "stadiumId": "14",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "58",
+      "homeTeamId": "16",
+      "awayTeamId": "13",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "D",
+      "matchday": "3",
+      "kickoff": "2026-06-25T19:00:00",
+      "stadiumId": "16",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
       "id": "62",
       "homeTeamId": "36",
       "awayTeamId": "33",
@@ -1713,20 +1503,6 @@
       "matchday": "3",
       "kickoff": "2026-06-26T20:00:00",
       "stadiumId": "14",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "64",
-      "homeTeamId": "28",
-      "awayTeamId": "25",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "G",
-      "matchday": "3",
-      "kickoff": "2026-06-26T20:00:00",
-      "stadiumId": "13",
       "finished": false,
       "status": "notstarted",
       "type": "group"
@@ -1760,14 +1536,518 @@
       "type": "group"
     },
     {
-      "id": "67",
-      "homeTeamId": "48",
-      "awayTeamId": "45",
+      "id": "70",
+      "homeTeamId": "40",
+      "awayTeamId": "37",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "J",
+      "matchday": "3",
+      "kickoff": "2026-06-27T21:00:00",
+      "stadiumId": "4",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "76",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-06-29T12:00:00",
+      "stadiumId": "5",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "83",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-02T19:00:00",
+      "stadiumId": "12",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "85",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-02T20:00:00",
+      "stadiumId": "13",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "93",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-06T14:00:00",
+      "stadiumId": "4",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "96",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-07T13:00:00",
+      "stadiumId": "13",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "1",
+      "homeTeamId": "1",
+      "awayTeamId": "2",
+      "homeScore": 2,
+      "awayScore": 0,
+      "group": "A",
+      "matchday": "1",
+      "kickoff": "2026-06-11T13:00:00",
+      "stadiumId": "1",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "7",
+      "homeTeamId": "9",
+      "awayTeamId": "10",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "C",
+      "matchday": "1",
+      "kickoff": "2026-06-13T18:00:00",
+      "stadiumId": "11",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "11",
+      "homeTeamId": "21",
+      "awayTeamId": "22",
+      "homeScore": 2,
+      "awayScore": 2,
+      "group": "F",
+      "matchday": "1",
+      "kickoff": "2026-06-14T15:00:00",
+      "stadiumId": "4",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "26",
+      "homeTeamId": "8",
+      "awayTeamId": "6",
+      "homeScore": 4,
+      "awayScore": 1,
+      "group": "B",
+      "matchday": "2",
+      "kickoff": "2026-06-18T12:00:00",
+      "stadiumId": "16",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "29",
+      "homeTeamId": "9",
+      "awayTeamId": "11",
+      "homeScore": 3,
+      "awayScore": 0,
+      "group": "C",
+      "matchday": "2",
+      "kickoff": "2026-06-19T21:00:00",
+      "stadiumId": "10",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "36",
+      "homeTeamId": "24",
+      "awayTeamId": "22",
+      "homeScore": 0,
+      "awayScore": 4,
+      "group": "F",
+      "matchday": "2",
+      "kickoff": "2026-06-20T22:00:00",
+      "stadiumId": "3",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "38",
+      "homeTeamId": "28",
+      "awayTeamId": "26",
+      "homeScore": 1,
+      "awayScore": 3,
+      "group": "G",
+      "matchday": "2",
+      "kickoff": "2026-06-21T18:00:00",
+      "stadiumId": "13",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "40",
+      "homeTeamId": "32",
+      "awayTeamId": "30",
+      "homeScore": 2,
+      "awayScore": 2,
+      "group": "H",
+      "matchday": "2",
+      "kickoff": "2026-06-21T18:00:00",
+      "stadiumId": "8",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "47",
+      "homeTeamId": "44",
+      "awayTeamId": "42",
+      "homeScore": 1,
+      "awayScore": 0,
+      "group": "K",
+      "matchday": "2",
+      "kickoff": "2026-06-23T20:00:00",
+      "stadiumId": "2",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "71",
+      "homeTeamId": "44",
+      "awayTeamId": "41",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "K",
+      "matchday": "3",
+      "kickoff": "2026-06-27T19:30:00",
+      "stadiumId": "8",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "73",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-06-28T12:00:00",
+      "stadiumId": "16",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "77",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-06-30T17:00:00",
+      "stadiumId": "11",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "84",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-02T12:00:00",
+      "stadiumId": "16",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "90",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-04T12:00:00",
+      "stadiumId": "5",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "92",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-05T18:00:00",
+      "stadiumId": "1",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "94",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-06T17:00:00",
+      "stadiumId": "14",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "14",
+      "homeTeamId": "29",
+      "awayTeamId": "30",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "H",
+      "matchday": "1",
+      "kickoff": "2026-06-15T12:00:00",
+      "stadiumId": "7",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "16",
+      "homeTeamId": "31",
+      "awayTeamId": "32",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "H",
+      "matchday": "1",
+      "kickoff": "2026-06-15T18:00:00",
+      "stadiumId": "8",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "20",
+      "homeTeamId": "39",
+      "awayTeamId": "40",
+      "homeScore": 3,
+      "awayScore": 1,
+      "group": "J",
+      "matchday": "1",
+      "kickoff": "2026-06-16T21:00:00",
+      "stadiumId": "15",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "23",
+      "homeTeamId": "43",
+      "awayTeamId": "44",
+      "homeScore": 1,
+      "awayScore": 3,
+      "group": "K",
+      "matchday": "1",
+      "kickoff": "2026-06-17T20:00:00",
+      "stadiumId": "1",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "91",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R16",
+      "matchday": "5",
+      "kickoff": "2026-07-05T16:00:00",
+      "stadiumId": "11",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r16"
+    },
+    {
+      "id": "97",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "QF",
+      "matchday": "6",
+      "kickoff": "2026-07-09T16:00:00",
+      "stadiumId": "9",
+      "finished": false,
+      "status": "notstarted",
+      "type": "qf"
+    },
+    {
+      "id": "104",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "FINAL",
+      "matchday": "9",
+      "kickoff": "2026-07-19T15:00:00",
+      "stadiumId": "11",
+      "finished": false,
+      "status": "notstarted",
+      "type": "final"
+    },
+    {
+      "id": "3",
+      "homeTeamId": "5",
+      "awayTeamId": "6",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "B",
+      "matchday": "1",
+      "kickoff": "2026-06-12T15:00:00",
+      "stadiumId": "12",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "13",
+      "homeTeamId": "27",
+      "awayTeamId": "28",
+      "homeScore": 2,
+      "awayScore": 2,
+      "group": "G",
+      "matchday": "1",
+      "kickoff": "2026-06-15T18:00:00",
+      "stadiumId": "16",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "19",
+      "homeTeamId": "37",
+      "awayTeamId": "38",
+      "homeScore": 3,
+      "awayScore": 0,
+      "group": "J",
+      "matchday": "1",
+      "kickoff": "2026-06-16T20:00:00",
+      "stadiumId": "6",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "24",
+      "homeTeamId": "47",
+      "awayTeamId": "48",
+      "homeScore": 1,
+      "awayScore": 0,
+      "group": "L",
+      "matchday": "1",
+      "kickoff": "2026-06-17T19:00:00",
+      "stadiumId": "12",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "28",
+      "homeTeamId": "4",
+      "awayTeamId": "2",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "A",
+      "matchday": "2",
+      "kickoff": "2026-06-18T12:00:00",
+      "stadiumId": "7",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "48",
+      "homeTeamId": "45",
+      "awayTeamId": "47",
       "homeScore": 0,
       "awayScore": 0,
       "group": "L",
+      "matchday": "2",
+      "kickoff": "2026-06-23T16:00:00",
+      "stadiumId": "9",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "55",
+      "homeTeamId": "18",
+      "awayTeamId": "19",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "E",
       "matchday": "3",
-      "kickoff": "2026-06-27T17:00:00",
+      "kickoff": "2026-06-25T16:00:00",
+      "stadiumId": "10",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "56",
+      "homeTeamId": "20",
+      "awayTeamId": "17",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "E",
+      "matchday": "3",
+      "kickoff": "2026-06-25T16:00:00",
       "stadiumId": "11",
       "finished": false,
       "status": "notstarted",
@@ -1802,62 +2082,6 @@
       "type": "group"
     },
     {
-      "id": "70",
-      "homeTeamId": "40",
-      "awayTeamId": "37",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "J",
-      "matchday": "3",
-      "kickoff": "2026-06-27T21:00:00",
-      "stadiumId": "4",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "71",
-      "homeTeamId": "44",
-      "awayTeamId": "41",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "K",
-      "matchday": "3",
-      "kickoff": "2026-06-27T19:30:00",
-      "stadiumId": "8",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "72",
-      "homeTeamId": "42",
-      "awayTeamId": "43",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "K",
-      "matchday": "3",
-      "kickoff": "2026-06-27T19:30:00",
-      "stadiumId": "7",
-      "finished": false,
-      "status": "notstarted",
-      "type": "group"
-    },
-    {
-      "id": "73",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-06-28T12:00:00",
-      "stadiumId": "16",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
       "id": "74",
       "homeTeamId": "17",
       "awayTeamId": "0",
@@ -1872,6 +2096,104 @@
       "type": "r32"
     },
     {
+      "id": "81",
+      "homeTeamId": "13",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "R32",
+      "matchday": "4",
+      "kickoff": "2026-07-01T17:00:00",
+      "stadiumId": "15",
+      "finished": false,
+      "status": "notstarted",
+      "type": "r32"
+    },
+    {
+      "id": "103",
+      "homeTeamId": "0",
+      "awayTeamId": "0",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "3RD",
+      "matchday": "8",
+      "kickoff": "2026-07-18T17:00:00",
+      "stadiumId": "8",
+      "finished": false,
+      "status": "notstarted",
+      "type": "third"
+    },
+    {
+      "id": "15",
+      "homeTeamId": "25",
+      "awayTeamId": "26",
+      "homeScore": 1,
+      "awayScore": 1,
+      "group": "G",
+      "matchday": "1",
+      "kickoff": "2026-06-15T12:00:00",
+      "stadiumId": "14",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "34",
+      "homeTeamId": "20",
+      "awayTeamId": "18",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "E",
+      "matchday": "2",
+      "kickoff": "2026-06-20T19:00:00",
+      "stadiumId": "6",
+      "finished": true,
+      "status": "finished",
+      "type": "group"
+    },
+    {
+      "id": "54",
+      "homeTeamId": "8",
+      "awayTeamId": "5",
+      "homeScore": null,
+      "awayScore": null,
+      "group": "B",
+      "matchday": "3",
+      "kickoff": "2026-06-24T12:00:00",
+      "stadiumId": "13",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "57",
+      "homeTeamId": "14",
+      "awayTeamId": "15",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "D",
+      "matchday": "3",
+      "kickoff": "2026-06-25T19:00:00",
+      "stadiumId": "15",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
+      "id": "64",
+      "homeTeamId": "28",
+      "awayTeamId": "25",
+      "homeScore": 0,
+      "awayScore": 0,
+      "group": "G",
+      "matchday": "3",
+      "kickoff": "2026-06-26T20:00:00",
+      "stadiumId": "13",
+      "finished": false,
+      "status": "notstarted",
+      "type": "group"
+    },
+    {
       "id": "75",
       "homeTeamId": "0",
       "awayTeamId": "0",
@@ -1881,34 +2203,6 @@
       "matchday": "4",
       "kickoff": "2026-06-29T19:00:00",
       "stadiumId": "3",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "76",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-06-29T12:00:00",
-      "stadiumId": "5",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "77",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-06-30T17:00:00",
-      "stadiumId": "11",
       "finished": false,
       "status": "notstarted",
       "type": "r32"
@@ -1956,20 +2250,6 @@
       "type": "r32"
     },
     {
-      "id": "81",
-      "homeTeamId": "13",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-01T17:00:00",
-      "stadiumId": "15",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
       "id": "82",
       "homeTeamId": "0",
       "awayTeamId": "0",
@@ -1979,90 +2259,6 @@
       "matchday": "4",
       "kickoff": "2026-07-01T13:00:00",
       "stadiumId": "14",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "83",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-02T19:00:00",
-      "stadiumId": "12",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "84",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-02T12:00:00",
-      "stadiumId": "16",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "85",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-02T20:00:00",
-      "stadiumId": "13",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "86",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-03T18:00:00",
-      "stadiumId": "8",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "87",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-03T20:30:00",
-      "stadiumId": "6",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r32"
-    },
-    {
-      "id": "88",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R32",
-      "matchday": "4",
-      "kickoff": "2026-07-03T13:00:00",
-      "stadiumId": "4",
       "finished": false,
       "status": "notstarted",
       "type": "r32"
@@ -2082,132 +2278,6 @@
       "type": "r16"
     },
     {
-      "id": "90",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-04T12:00:00",
-      "stadiumId": "5",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "91",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-05T16:00:00",
-      "stadiumId": "11",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "92",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-05T18:00:00",
-      "stadiumId": "1",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "93",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-06T14:00:00",
-      "stadiumId": "4",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "94",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-06T17:00:00",
-      "stadiumId": "14",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "95",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-07T12:00:00",
-      "stadiumId": "7",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "96",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "R16",
-      "matchday": "5",
-      "kickoff": "2026-07-07T13:00:00",
-      "stadiumId": "13",
-      "finished": false,
-      "status": "notstarted",
-      "type": "r16"
-    },
-    {
-      "id": "97",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "QF",
-      "matchday": "6",
-      "kickoff": "2026-07-09T16:00:00",
-      "stadiumId": "9",
-      "finished": false,
-      "status": "notstarted",
-      "type": "qf"
-    },
-    {
-      "id": "98",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "QF",
-      "matchday": "6",
-      "kickoff": "2026-07-10T12:00:00",
-      "stadiumId": "16",
-      "finished": false,
-      "status": "notstarted",
-      "type": "qf"
-    },
-    {
       "id": "99",
       "homeTeamId": "0",
       "awayTeamId": "0",
@@ -2220,76 +2290,6 @@
       "finished": false,
       "status": "notstarted",
       "type": "qf"
-    },
-    {
-      "id": "100",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "QF",
-      "matchday": "6",
-      "kickoff": "2026-07-11T20:00:00",
-      "stadiumId": "6",
-      "finished": false,
-      "status": "notstarted",
-      "type": "qf"
-    },
-    {
-      "id": "101",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "SF",
-      "matchday": "7",
-      "kickoff": "2026-07-14T14:00:00",
-      "stadiumId": "4",
-      "finished": false,
-      "status": "notstarted",
-      "type": "sf"
-    },
-    {
-      "id": "102",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "SF",
-      "matchday": "7",
-      "kickoff": "2026-07-15T15:00:00",
-      "stadiumId": "7",
-      "finished": false,
-      "status": "notstarted",
-      "type": "sf"
-    },
-    {
-      "id": "103",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "3RD",
-      "matchday": "8",
-      "kickoff": "2026-07-18T17:00:00",
-      "stadiumId": "8",
-      "finished": false,
-      "status": "notstarted",
-      "type": "third"
-    },
-    {
-      "id": "104",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
-      "homeScore": 0,
-      "awayScore": 0,
-      "group": "FINAL",
-      "matchday": "9",
-      "kickoff": "2026-07-19T15:00:00",
-      "stadiumId": "11",
-      "finished": false,
-      "status": "notstarted",
-      "type": "final"
     }
   ],
   "unmatchedTeams": []
