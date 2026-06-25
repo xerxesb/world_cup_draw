@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T02:26:12.670Z",
+  "generatedAt": "2026-06-25T03:50:40.046Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -202,49 +202,49 @@
       "teams": [
         {
           "teamId": "1",
-          "played": 2,
-          "won": 2,
+          "played": 3,
+          "won": 3,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 3,
+          "goalsFor": 6,
           "goalsAgainst": 0,
-          "goalDifference": 3,
-          "points": 6,
+          "goalDifference": 6,
+          "points": 9,
           "position": 1
         },
         {
-          "teamId": "3",
-          "played": 2,
+          "teamId": "2",
+          "played": 3,
           "won": 1,
-          "drawn": 0,
-          "lost": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0,
-          "points": 3,
-          "position": 2
-        },
-        {
-          "teamId": "4",
-          "played": 2,
-          "won": 0,
           "drawn": 1,
           "lost": 1,
           "goalsFor": 2,
           "goalsAgainst": 3,
           "goalDifference": -1,
-          "points": 1,
+          "points": 4,
+          "position": 2
+        },
+        {
+          "teamId": "3",
+          "played": 3,
+          "won": 1,
+          "drawn": 0,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDifference": -1,
+          "points": 3,
           "position": 3
         },
         {
-          "teamId": "2",
-          "played": 2,
+          "teamId": "4",
+          "played": 3,
           "won": 0,
           "drawn": 1,
-          "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 3,
-          "goalDifference": -2,
+          "lost": 2,
+          "goalsFor": 2,
+          "goalsAgainst": 6,
+          "goalDifference": -4,
           "points": 1,
           "position": 4
         }
@@ -1078,13 +1078,13 @@
       "homeTeamId": "4",
       "awayTeamId": "1",
       "homeScore": 0,
-      "awayScore": 2,
+      "awayScore": 3,
       "group": "A",
       "matchday": "3",
       "kickoff": "2026-06-24T19:00:00",
       "stadiumId": "1",
-      "finished": false,
-      "status": "live",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
@@ -1293,8 +1293,8 @@
       "matchday": "3",
       "kickoff": "2026-06-24T19:00:00",
       "stadiumId": "3",
-      "finished": false,
-      "status": "live",
+      "finished": true,
+      "status": "finished",
       "type": "group"
     },
     {
