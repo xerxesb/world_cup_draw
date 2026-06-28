@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-28T05:40:18.347Z",
+  "generatedAt": "2026-06-28T07:08:35.489Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -1565,8 +1565,8 @@
     },
     {
       "id": "83",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
+      "homeTeamId": "41",
+      "awayTeamId": "46",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -1580,7 +1580,7 @@
     {
       "id": "85",
       "homeTeamId": "8",
-      "awayTeamId": "0",
+      "awayTeamId": "38",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -1776,7 +1776,7 @@
     {
       "id": "77",
       "homeTeamId": "33",
-      "awayTeamId": "0",
+      "awayTeamId": "23",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -1789,8 +1789,8 @@
     },
     {
       "id": "84",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
+      "homeTeamId": "29",
+      "awayTeamId": "39",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -2224,7 +2224,7 @@
     {
       "id": "79",
       "homeTeamId": "1",
-      "awayTeamId": "0",
+      "awayTeamId": "20",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -2237,8 +2237,8 @@
     },
     {
       "id": "80",
-      "homeTeamId": "25",
-      "awayTeamId": "34",
+      "homeTeamId": "45",
+      "awayTeamId": "42",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
@@ -2251,8 +2251,8 @@
     },
     {
       "id": "82",
-      "homeTeamId": "0",
-      "awayTeamId": "0",
+      "homeTeamId": "25",
+      "awayTeamId": "34",
       "homeScore": 0,
       "awayScore": 0,
       "group": "R32",
