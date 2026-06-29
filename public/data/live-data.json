@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T05:46:52.745Z",
+  "generatedAt": "2026-06-29T08:05:08.952Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -1803,7 +1803,7 @@
     },
     {
       "id": "90",
-      "homeTeamId": "2",
+      "homeTeamId": "5",
       "awayTeamId": "0",
       "homeScore": 0,
       "awayScore": 0,
