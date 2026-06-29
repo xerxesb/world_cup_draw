@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T11:48:04.970Z",
+  "generatedAt": "2026-06-29T13:43:38.910Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -1553,8 +1553,8 @@
       "id": "76",
       "homeTeamId": "9",
       "awayTeamId": "22",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "group": "R32",
       "matchday": "4",
       "kickoff": "2026-06-29T12:00:00",
@@ -2085,8 +2085,8 @@
       "id": "74",
       "homeTeamId": "17",
       "awayTeamId": "14",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "group": "R32",
       "matchday": "4",
       "kickoff": "2026-06-29T16:30:00",
