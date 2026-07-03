@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T14:33:24.447Z",
+  "generatedAt": "2026-07-03T15:30:44.701Z",
   "source": "openfootball",
   "stale": false,
   "teams": [
@@ -197,90 +197,78 @@
     },
     {
       "id": "49",
-      "name": "W83"
-    },
-    {
-      "id": "50",
-      "name": "W84"
-    },
-    {
-      "id": "51",
       "name": "W86"
     },
     {
-      "id": "52",
+      "id": "50",
       "name": "W88"
     },
     {
-      "id": "53",
-      "name": "W85"
-    },
-    {
-      "id": "54",
+      "id": "51",
       "name": "W87"
     },
     {
-      "id": "55",
+      "id": "52",
       "name": "W89"
     },
     {
-      "id": "56",
+      "id": "53",
       "name": "W90"
     },
     {
-      "id": "57",
+      "id": "54",
       "name": "W93"
     },
     {
-      "id": "58",
+      "id": "55",
       "name": "W94"
     },
     {
-      "id": "59",
+      "id": "56",
       "name": "W91"
     },
     {
-      "id": "60",
+      "id": "57",
       "name": "W92"
     },
     {
-      "id": "61",
+      "id": "58",
       "name": "W95"
     },
     {
-      "id": "62",
+      "id": "59",
       "name": "W96"
     },
     {
-      "id": "63",
+      "id": "60",
       "name": "W97"
     },
     {
-      "id": "64",
+      "id": "61",
       "name": "W98"
     },
     {
-      "id": "65",
+      "id": "62",
       "name": "W99"
     },
     {
-      "id": "66",
+      "id": "63",
       "name": "W100"
     },
     {
-      "id": "67",
+      "id": "64",
       "name": "L101"
     },
     {
-      "id": "68",
+      "id": "65",
       "name": "L102"
     },
     {
-      "id": "69",
+      "id": "66",
       "name": "W101"
     },
     {
-      "id": "70",
+      "id": "67",
       "name": "W102"
     }
   ],
@@ -2213,8 +2201,8 @@
     },
     {
       "id": "93",
-      "homeTeamId": "49",
-      "awayTeamId": "50",
+      "homeTeamId": "41",
+      "awayTeamId": "29",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2241,8 +2229,8 @@
     },
     {
       "id": "95",
-      "homeTeamId": "51",
-      "awayTeamId": "52",
+      "homeTeamId": "49",
+      "awayTeamId": "50",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2255,8 +2243,8 @@
     },
     {
       "id": "96",
-      "homeTeamId": "53",
-      "awayTeamId": "54",
+      "homeTeamId": "8",
+      "awayTeamId": "51",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2269,8 +2257,8 @@
     },
     {
       "id": "97",
-      "homeTeamId": "55",
-      "awayTeamId": "56",
+      "homeTeamId": "52",
+      "awayTeamId": "53",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2283,8 +2271,8 @@
     },
     {
       "id": "98",
-      "homeTeamId": "57",
-      "awayTeamId": "58",
+      "homeTeamId": "54",
+      "awayTeamId": "55",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2297,8 +2285,8 @@
     },
     {
       "id": "99",
-      "homeTeamId": "59",
-      "awayTeamId": "60",
+      "homeTeamId": "56",
+      "awayTeamId": "57",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2311,8 +2299,8 @@
     },
     {
       "id": "100",
-      "homeTeamId": "61",
-      "awayTeamId": "62",
+      "homeTeamId": "58",
+      "awayTeamId": "59",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2325,8 +2313,8 @@
     },
     {
       "id": "101",
-      "homeTeamId": "63",
-      "awayTeamId": "64",
+      "homeTeamId": "60",
+      "awayTeamId": "61",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2339,8 +2327,8 @@
     },
     {
       "id": "102",
-      "homeTeamId": "65",
-      "awayTeamId": "66",
+      "homeTeamId": "62",
+      "awayTeamId": "63",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2353,8 +2341,8 @@
     },
     {
       "id": "103",
-      "homeTeamId": "67",
-      "awayTeamId": "68",
+      "homeTeamId": "64",
+      "awayTeamId": "65",
       "homeScore": null,
       "awayScore": null,
       "group": null,
@@ -2367,8 +2355,8 @@
     },
     {
       "id": "104",
-      "homeTeamId": "69",
-      "awayTeamId": "70",
+      "homeTeamId": "66",
+      "awayTeamId": "67",
       "homeScore": null,
       "awayScore": null,
       "group": null,
