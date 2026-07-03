@@ -216,6 +216,79 @@ export function normalizeSnapshot(raw: RawApiSnapshot): TournamentSnapshot {
   };
 }
 
+const KNOCKOUT_TYPES = new Set(["r32", "r16", "qf", "sf", "third", "final", "knockout"]);
+
+/**
+ * Returns the set of team IDs still alive in the knockout stage, or null if no
+ * knockout stage has started yet (caller should fall back to group position).
+ */
+export function buildAdvancingTeamIds(matches: Match[]): Set<string> | null {
+  const knockoutMatches = matches.filter((m) => KNOCKOUT_TYPES.has(m.type));
+
+  // Collect all non-placeholder team IDs from knockout fixtures
+  const inKnockout = new Set<string>();
+  knockoutMatches.forEach((m) => {
+    if (m.homeTeamId && m.homeTeamId !== "0") inKnockout.add(m.homeTeamId);
+    if (m.awayTeamId && m.awayTeamId !== "0") inKnockout.add(m.awayTeamId);
+  });
+
+  if (inKnockout.size === 0) return null; // No knockout stage yet
+
+  // Count how many knockout fixtures each team appears in.
+  // A penalty-shootout winner advances to the next round (2+ appearances);
+  // the loser does not (1 appearance). This lets us infer penalty results.
+  const fixtureCount = new Map<string, number>();
+  knockoutMatches.forEach((m) => {
+    if (m.homeTeamId && m.homeTeamId !== "0") {
+      fixtureCount.set(m.homeTeamId, (fixtureCount.get(m.homeTeamId) ?? 0) + 1);
+    }
+    if (m.awayTeamId && m.awayTeamId !== "0") {
+      fixtureCount.set(m.awayTeamId, (fixtureCount.get(m.awayTeamId) ?? 0) + 1);
+    }
+  });
+
+  const eliminated = new Set<string>();
+
+  knockoutMatches
+    .filter((m) => m.finished)
+    .forEach((m) => {
+      const homeScore = m.homeScore ?? 0;
+      const awayScore = m.awayScore ?? 0;
+
+      if (homeScore > awayScore) {
+        if (m.awayTeamId && m.awayTeamId !== "0") eliminated.add(m.awayTeamId);
+      } else if (awayScore > homeScore) {
+        if (m.homeTeamId && m.homeTeamId !== "0") eliminated.add(m.homeTeamId);
+      } else {
+        // Draw — infer penalty winner from fixture appearances
+        const homeCount = fixtureCount.get(m.homeTeamId) ?? 0;
+        const awayCount = fixtureCount.get(m.awayTeamId) ?? 0;
+        if (homeCount > awayCount) {
+          if (m.awayTeamId && m.awayTeamId !== "0") eliminated.add(m.awayTeamId);
+        } else if (awayCount > homeCount) {
+          if (m.homeTeamId && m.homeTeamId !== "0") eliminated.add(m.homeTeamId);
+        }
+        // Equal appearances → penalty result not yet determinable; neither eliminated
+      }
+    });
+
+  // Remove any tentatively-eliminated team that still has an unfinished fixture.
+  // This handles SF losers who proceed to the third-place match.
+  for (const m of knockoutMatches) {
+    if (!m.finished) {
+      if (m.homeTeamId && m.homeTeamId !== "0") eliminated.delete(m.homeTeamId);
+      if (m.awayTeamId && m.awayTeamId !== "0") eliminated.delete(m.awayTeamId);
+    }
+  }
+
+  const advancing = new Set<string>();
+  for (const teamId of inKnockout) {
+    if (!eliminated.has(teamId)) advancing.add(teamId);
+  }
+
+  return advancing;
+}
+
 export function buildLeaderboard(
   allocations: Allocation[],
   snapshot: TournamentSnapshot,
@@ -229,6 +302,10 @@ export function buildLeaderboard(
     });
   });
 
+  // Determine which teams are still in the tournament based on knockout results.
+  // null means the knockout stage hasn't started; fall back to group position.
+  const advancingIds = buildAdvancingTeamIds(snapshot.matches);
+
   const rows = allocations.map((allocation) => {
     const ownedTeams = [
       { name: allocation.tierA, tier: "A" as const, isBonus: false },
@@ -241,7 +318,10 @@ export function buildLeaderboard(
       const matchedTeam = teamsByName.get(normalizeTeamName(name));
       const groupInfo = matchedTeam ? standingByTeamId.get(matchedTeam.id) : undefined;
       const standing = groupInfo?.standing;
-      const advancing = standing ? standing.position <= 2 : false;
+      const advancing =
+        advancingIds !== null
+          ? Boolean(matchedTeam && advancingIds.has(matchedTeam.id))
+          : (standing ? standing.position <= 2 : false);
 
       return {
         name,
