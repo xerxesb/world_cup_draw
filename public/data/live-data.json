@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:10:06.105Z",
+  "generatedAt": "2026-07-04T18:37:06.626Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -2086,7 +2086,7 @@
       "homeTeamId": "5",
       "awayTeamId": "10",
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "group": "R16",
       "matchday": "5",
       "kickoff": "2026-07-04T12:00:00",
