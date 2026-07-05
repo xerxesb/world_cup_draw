@@ -119,6 +119,110 @@ describe("buildLeaderboard", () => {
     expect(rows.map((row) => row.participant)).toEqual(["Alex", "Blair", "Casey"]);
     expect(rows.map((row) => row.rank)).toEqual([1, 2, 3]);
   });
+
+  it("marks a team eliminated after it loses a finished knockout match", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "201",
+          homeTeamId: "1",
+          awayTeamId: "99",
+          homeScore: 1,
+          awayScore: 2,
+          group: null,
+          matchday: "Round of 16",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const france = alex.teams.find((team) => team.name === "France");
+
+    expect(france?.knockoutStatus).toBe("eliminated");
+  });
+
+  it("marks a team champion after it wins a finished Final match", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "202",
+          homeTeamId: "2",
+          awayTeamId: "98",
+          homeScore: 3,
+          awayScore: 1,
+          group: null,
+          matchday: "Final",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const czechia = alex.teams.find((team) => team.name === "Czechia");
+
+    expect(czechia?.knockoutStatus).toBe("champion");
+  });
+
+  it("marks a team already out of the running (didn't qualify from groups) as eliminated", () => {
+    const [alex] = buildLeaderboard(allocations, snapshot);
+    const drCongo = alex.teams.find((team) => team.name === "DR Congo");
+
+    expect(drCongo?.knockoutStatus).toBe("eliminated");
+  });
+
+  it("keeps a qualified team alive while its knockout match is unfinished or undecided", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "203",
+          homeTeamId: "5",
+          awayTeamId: "97",
+          homeScore: null,
+          awayScore: null,
+          group: null,
+          matchday: "Round of 16",
+          kickoff: null,
+          stadiumId: null,
+          finished: false,
+          status: "notstarted",
+          type: "knockout",
+        },
+        {
+          id: "204",
+          homeTeamId: "9",
+          awayTeamId: "96",
+          homeScore: 1,
+          awayScore: 1,
+          group: null,
+          matchday: "Round of 16",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+      ],
+    };
+
+    const [, blair, casey] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const brazil = blair.teams.find((team) => team.name === "Brazil");
+    const japan = casey.teams.find((team) => team.name === "Japan");
+
+    expect(brazil?.knockoutStatus).toBe("alive");
+    expect(japan?.knockoutStatus).toBe("alive");
+  });
 });
 
 describe("normalizeSnapshot", () => {

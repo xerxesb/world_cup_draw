@@ -29,9 +29,9 @@ export function Leaderboard({ rows }: LeaderboardProps) {
               <div className="teamStrip">
                 {row.teams.map((team) => (
                   <span
-                    className={`teamChip ${team.advancing ? "advancing" : ""} ${team.isBonus ? "bonus" : ""}`}
+                    className={`teamChip ${team.knockoutStatus} ${team.isBonus ? "bonus" : ""}`}
                     key={`${row.participant}-${team.tier}-${team.name}`}
-                    title={`${team.tier}: ${team.points} pts`}
+                    title={`${team.tier}: ${team.points} pts \u00b7 ${team.knockoutStatus}`}
                   >
                     <b>{team.tier === "Bonus" ? "+" : team.tier}</b>
                     {displayTeamName(team.name)}

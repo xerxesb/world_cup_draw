@@ -113,6 +113,8 @@ export interface RawApiSnapshot {
   matches?: RawApiMatch[];
 }
 
+export type KnockoutStatus = "alive" | "eliminated" | "champion";
+
 export interface LeaderboardTeam {
   name: string;
   tier: "A" | "B" | "C" | "Bonus";
@@ -121,6 +123,7 @@ export interface LeaderboardTeam {
   position: number | null;
   group: string | null;
   advancing: boolean;
+  knockoutStatus: KnockoutStatus;
   isBonus: boolean;
   matched: boolean;
 }
@@ -222,6 +225,7 @@ export function buildLeaderboard(
 ): LeaderboardRow[] {
   const teamsByName = new Map(snapshot.teams.map((team) => [normalizeTeamName(team.name), team]));
   const standingByTeamId = new Map<string, { group: string; standing: GroupStanding }>();
+  const { eliminatedTeamIds, championTeamId } = computeKnockoutOutcomes(snapshot);
 
   snapshot.groups.forEach((group) => {
     group.teams.forEach((standing) => {
@@ -243,6 +247,14 @@ export function buildLeaderboard(
       const standing = groupInfo?.standing;
       const advancing = standing ? standing.position <= 2 : false;
 
+      const knockoutStatus: KnockoutStatus = !advancing
+        ? "eliminated"
+        : matchedTeam?.id === championTeamId
+          ? "champion"
+          : matchedTeam && eliminatedTeamIds.has(matchedTeam.id)
+            ? "eliminated"
+            : "alive";
+
       return {
         name,
         tier,
@@ -251,10 +263,12 @@ export function buildLeaderboard(
         position: standing?.position ?? null,
         group: groupInfo?.group ?? null,
         advancing,
+        knockoutStatus,
         isBonus,
         matched: Boolean(matchedTeam && standing),
       };
     });
+
 
     const groupPoints = teams.reduce((sum, team) => sum + team.points, 0);
     const advancementBonus = teams.filter((team) => team.advancing).length * 3;
@@ -283,6 +297,36 @@ export function buildLeaderboard(
   });
 
   return rows.map((row, index) => ({ ...row, rank: index + 1 }));
+}
+
+function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
+  eliminatedTeamIds: Set<string>;
+  championTeamId: string | null;
+} {
+  const eliminatedTeamIds = new Set<string>();
+  let championTeamId: string | null = null;
+
+  snapshot.matches.forEach((match) => {
+    if (match.type !== "knockout" || !match.finished) {
+      return;
+    }
+
+    if (match.homeScore === null || match.awayScore === null || match.homeScore === match.awayScore) {
+      // Can't tell a penalty-shootout winner from this data model; treat as undecided.
+      return;
+    }
+
+    const winnerId = match.homeScore > match.awayScore ? match.homeTeamId : match.awayTeamId;
+    const loserId = match.homeScore > match.awayScore ? match.awayTeamId : match.homeTeamId;
+
+    eliminatedTeamIds.add(loserId);
+
+    if (match.matchday === "Final") {
+      championTeamId = winnerId;
+    }
+  });
+
+  return { eliminatedTeamIds, championTeamId };
 }
 
 function numberValue(value: string | number | undefined): number {

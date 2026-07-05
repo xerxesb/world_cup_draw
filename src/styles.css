@@ -298,9 +298,22 @@ p {
   font-size: 9px;
 }
 
-.teamChip.advancing {
+.teamChip.alive {
   border-color: rgba(28, 90, 67, 0.5);
   background: rgba(181, 223, 95, 0.42);
+}
+
+.teamChip.eliminated {
+  border-color: rgba(17, 24, 25, 0.1);
+  background: rgba(255, 255, 255, 0.28);
+  color: #6b7570;
+  opacity: 0.6;
+}
+
+.teamChip.champion {
+  border-color: rgba(201, 155, 26, 0.65);
+  background: rgba(255, 205, 60, 0.4);
+  color: #3d2f05;
 }
 
 .teamChip.bonus {
