@@ -440,7 +440,7 @@ p {
 
 .sideStack {
   display: grid;
-  grid-template-rows: minmax(0, 0.62fr) minmax(120px, 0.24fr) minmax(150px, 0.4fr);
+  grid-template-rows: minmax(140px, 0.32fr) minmax(0, 0.78fr) minmax(150px, 0.4fr);
   gap: 10px;
   min-height: 0;
 }
@@ -454,7 +454,7 @@ p {
 
 .knockoutRows {
   display: grid;
-  grid-auto-rows: minmax(0, 1fr);
+  grid-template-rows: repeat(15, minmax(0, 1fr));
   min-height: 0;
   padding: 2px 12px;
   overflow: hidden;
@@ -466,9 +466,9 @@ p {
   align-items: center;
   gap: 8px;
   min-height: 0;
-  padding: 3px 0;
+  padding: 4px 0;
   border-top: 1px solid rgba(17, 24, 25, 0.1);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .knockoutRow:first-child {
@@ -508,17 +508,18 @@ p {
 .groupGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 7px;
+  gap: 5px;
   min-height: 0;
-  padding: 8px;
+  padding: 6px;
 }
 
 .groupTable {
   min-width: 0;
   min-height: 0;
-  padding: 8px;
+  padding: 5px;
   border: 1px solid rgba(17, 24, 25, 0.12);
   background: rgba(255, 255, 255, 0.48);
+  font-size: 12px;
 }
 
 .groupTable h3 {
