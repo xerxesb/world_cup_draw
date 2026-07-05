@@ -31,13 +31,21 @@ jobs:
       - run: npm test -- --run
       - run: npm run build
       - name: Commit refreshed data
+        id: auto-commit
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh world cup data"
           file_pattern: public/data/live-data.json
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - name: Skip deploy if data unchanged
+        id: should-deploy
+        if: steps.auto-commit.outputs.changes_detected == 'true' || github.event_name == 'workflow_dispatch'
+        run: echo "deploy=true" >> "$GITHUB_OUTPUT"
+      - if: steps.should-deploy.outputs.deploy == 'true'
+        uses: actions/configure-pages@v5
+      - if: steps.should-deploy.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
       - id: deployment
+        if: steps.should-deploy.outputs.deploy == 'true'
         uses: actions/deploy-pages@v4
