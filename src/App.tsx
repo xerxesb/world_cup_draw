@@ -102,11 +102,13 @@ export default function App({ initialData }: AppProps) {
       </header>
 
       <section className="layout">
-        <Leaderboard rows={data.leaderboard} />
+        <div className="leftStack">
+          <Leaderboard rows={data.leaderboard} />
+          <KnockoutLeaderboard rows={knockoutLeaderboard} />
+        </div>
         <MatchBoard snapshot={data.snapshot} />
         <aside className="sideStack">
           <GroupTables snapshot={data.snapshot} leaderboard={data.leaderboard} />
-          <KnockoutLeaderboard rows={knockoutLeaderboard} />
           <Awards awards={data.awards} leaderboard={data.leaderboard} />
         </aside>
       </section>

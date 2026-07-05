@@ -152,6 +152,13 @@ p {
   min-height: 0;
 }
 
+.leftStack {
+  display: grid;
+  grid-template-rows: minmax(0, 0.6fr) minmax(180px, 0.4fr);
+  gap: 10px;
+  min-height: 0;
+}
+
 .panel,
 .featureMatch {
   min-width: 0;
@@ -440,7 +447,7 @@ p {
 
 .sideStack {
   display: grid;
-  grid-template-rows: minmax(140px, 0.32fr) minmax(0, 0.78fr) minmax(150px, 0.4fr);
+  grid-template-rows: minmax(140px, 0.4fr) minmax(160px, 0.6fr);
   gap: 10px;
   min-height: 0;
 }
