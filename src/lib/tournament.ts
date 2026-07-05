@@ -35,6 +35,8 @@ export interface Match {
   awayTeamId: string;
   homeScore: number | null;
   awayScore: number | null;
+  homePenalties?: number | null;
+  awayPenalties?: number | null;
   group: string | null;
   matchday: string | null;
   kickoff: string | null;
@@ -311,13 +313,27 @@ function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
       return;
     }
 
-    if (match.homeScore === null || match.awayScore === null || match.homeScore === match.awayScore) {
-      // Can't tell a penalty-shootout winner from this data model; treat as undecided.
+    if (match.homeScore === null || match.awayScore === null) {
       return;
     }
 
-    const winnerId = match.homeScore > match.awayScore ? match.homeTeamId : match.awayTeamId;
-    const loserId = match.homeScore > match.awayScore ? match.awayTeamId : match.homeTeamId;
+    let winnerId: string;
+    let loserId: string;
+
+    if (match.homeScore !== match.awayScore) {
+      winnerId = match.homeScore > match.awayScore ? match.homeTeamId : match.awayTeamId;
+      loserId = match.homeScore > match.awayScore ? match.awayTeamId : match.homeTeamId;
+    } else if (
+      match.homePenalties != null &&
+      match.awayPenalties != null &&
+      match.homePenalties !== match.awayPenalties
+    ) {
+      winnerId = match.homePenalties > match.awayPenalties ? match.homeTeamId : match.awayTeamId;
+      loserId = match.homePenalties > match.awayPenalties ? match.awayTeamId : match.homeTeamId;
+    } else {
+      // Tied with no (or no decisive) penalty-shootout data; treat as undecided.
+      return;
+    }
 
     eliminatedTeamIds.add(loserId);
 

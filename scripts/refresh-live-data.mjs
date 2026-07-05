@@ -127,12 +127,15 @@ export function normalizeOpenfootball(data, generatedAt) {
     const t1 = normalizeName(m.team1);
     const t2 = normalizeName(m.team2);
     const finished = !!m.score?.ft;
+    const penalties = m.score?.p;
     return {
       id: String(i + 1),
       homeTeamId: teamIdByName.get(t1) ?? "",
       awayTeamId: teamIdByName.get(t2) ?? "",
       homeScore: finished ? m.score.ft[0] : null,
       awayScore: finished ? m.score.ft[1] : null,
+      homePenalties: penalties ? penalties[0] : null,
+      awayPenalties: penalties ? penalties[1] : null,
       group: m.group ?? null,
       matchday: m.round ?? null,
       kickoff: parseOpenfootballKickoff(m.date, m.time),

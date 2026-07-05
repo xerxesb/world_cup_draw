@@ -223,6 +223,35 @@ describe("buildLeaderboard", () => {
     expect(brazil?.knockoutStatus).toBe("alive");
     expect(japan?.knockoutStatus).toBe("alive");
   });
+
+  it("marks a team eliminated when a tied knockout match is decided on penalties", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "205",
+          homeTeamId: "1",
+          awayTeamId: "99",
+          homeScore: 1,
+          awayScore: 1,
+          homePenalties: 3,
+          awayPenalties: 4,
+          group: null,
+          matchday: "Round of 16",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const france = alex.teams.find((team) => team.name === "France");
+
+    expect(france?.knockoutStatus).toBe("eliminated");
+  });
 });
 
 describe("normalizeSnapshot", () => {
