@@ -40,9 +40,9 @@ const dashboardData: DashboardData = {
       activeTeams: 2,
       bestTeamPoints: 3,
       teams: [
-        { name: "Belgium", tier: "A", points: 3, goalDifference: 2, position: 1, group: "A", advancing: true, knockoutStatus: "alive", isBonus: false, matched: true },
-        { name: "South Korea", tier: "B", points: 0, goalDifference: -2, position: 2, group: "A", advancing: true, knockoutStatus: "alive", isBonus: false, matched: true },
-        { name: "Uzbekistan", tier: "C", points: 0, goalDifference: 0, position: null, group: null, advancing: false, knockoutStatus: "eliminated", isBonus: false, matched: false },
+        { name: "Belgium", tier: "A", points: 3, goalDifference: 2, position: 1, group: "A", advancing: true, knockoutStatus: "alive", knockoutWins: 0, isBonus: false, matched: true },
+        { name: "South Korea", tier: "B", points: 0, goalDifference: -2, position: 2, group: "A", advancing: true, knockoutStatus: "alive", knockoutWins: 0, isBonus: false, matched: true },
+        { name: "Uzbekistan", tier: "C", points: 0, goalDifference: 0, position: null, group: null, advancing: false, knockoutStatus: "eliminated", knockoutWins: 0, isBonus: false, matched: false },
       ],
     },
   ],

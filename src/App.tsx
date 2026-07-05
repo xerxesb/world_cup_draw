@@ -2,10 +2,12 @@ import { useEffect, useMemo, useState } from "react";
 import { Activity, Clock, RadioTower } from "lucide-react";
 import { Awards } from "./components/Awards";
 import { GroupTables } from "./components/GroupTables";
+import { KnockoutLeaderboard } from "./components/KnockoutLeaderboard";
 import { Leaderboard } from "./components/Leaderboard";
 import { MatchBoard } from "./components/MatchBoard";
 import { Ticker } from "./components/Ticker";
 import { loadDashboardData, type DashboardData } from "./lib/data";
+import { buildKnockoutLeaderboard } from "./lib/tournament";
 
 const DATA_REFRESH_INTERVAL_MS = 5 * 60 * 1000;
 
@@ -57,6 +59,11 @@ export default function App({ initialData }: AppProps) {
     return `Loaded ${refreshTime} | Snapshot ${generatedTime} | ${data.snapshot.source}`;
   }, [data]);
 
+  const knockoutLeaderboard = useMemo(
+    () => (data ? buildKnockoutLeaderboard(data.leaderboard) : []),
+    [data],
+  );
+
   if (!data) {
     return (
       <main className="dashboard loading">
@@ -99,6 +106,7 @@ export default function App({ initialData }: AppProps) {
         <MatchBoard snapshot={data.snapshot} />
         <aside className="sideStack">
           <GroupTables snapshot={data.snapshot} leaderboard={data.leaderboard} />
+          <KnockoutLeaderboard rows={knockoutLeaderboard} />
           <Awards awards={data.awards} leaderboard={data.leaderboard} />
         </aside>
       </section>

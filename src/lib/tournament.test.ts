@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  buildKnockoutLeaderboard,
   buildLeaderboard,
   normalizeSnapshot,
   normalizeTeamName,
@@ -251,6 +252,129 @@ describe("buildLeaderboard", () => {
     const france = alex.teams.find((team) => team.name === "France");
 
     expect(france?.knockoutStatus).toBe("eliminated");
+  });
+
+  it("counts a team's finished knockout wins, including ones decided on penalties", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "206",
+          homeTeamId: "1",
+          awayTeamId: "99",
+          homeScore: 2,
+          awayScore: 0,
+          group: null,
+          matchday: "Round of 16",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+        {
+          id: "207",
+          homeTeamId: "1",
+          awayTeamId: "98",
+          homeScore: 1,
+          awayScore: 1,
+          homePenalties: 5,
+          awayPenalties: 4,
+          group: null,
+          matchday: "Quarter-final",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "knockout",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const france = alex.teams.find((team) => team.name === "France");
+
+    expect(france?.knockoutWins).toBe(2);
+  });
+
+  it("gives a team with no knockout matches yet zero knockout wins", () => {
+    const [alex] = buildLeaderboard(allocations, snapshot);
+    const france = alex.teams.find((team) => team.name === "France");
+
+    expect(france?.knockoutWins).toBe(0);
+  });
+
+  describe("buildKnockoutLeaderboard", () => {
+  const rows = buildLeaderboard(allocations, {
+    ...snapshot,
+    matches: [
+      {
+        id: "301",
+        homeTeamId: "1",
+        awayTeamId: "99",
+        homeScore: 2,
+        awayScore: 0,
+        group: null,
+        matchday: "Round of 16",
+        kickoff: null,
+        stadiumId: null,
+        finished: true,
+        status: "finished",
+        type: "knockout",
+      },
+      {
+        id: "302",
+        homeTeamId: "1",
+        awayTeamId: "98",
+        homeScore: 1,
+        awayScore: 0,
+        group: null,
+        matchday: "Quarter-final",
+        kickoff: null,
+        stadiumId: null,
+        finished: true,
+        status: "finished",
+        type: "knockout",
+      },
+      {
+        id: "303",
+        homeTeamId: "5",
+        awayTeamId: "97",
+        homeScore: 3,
+        awayScore: 1,
+        group: null,
+        matchday: "Round of 16",
+        kickoff: null,
+        stadiumId: null,
+        finished: true,
+        status: "finished",
+        type: "knockout",
+      },
+    ],
+  });
+
+  it("ranks participants by total knockout wins across their teams", () => {
+    const knockoutRows = buildKnockoutLeaderboard(rows);
+
+    expect(knockoutRows.map((row) => row.participant)).toEqual(["Alex", "Blair", "Casey"]);
+    expect(knockoutRows.map((row) => row.knockoutWins)).toEqual([2, 1, 0]);
+    expect(knockoutRows.map((row) => row.rank)).toEqual([1, 2, 3]);
+  });
+
+  it("reports how many of a participant's teams are still alive or champion", () => {
+    const knockoutRows = buildKnockoutLeaderboard(rows);
+    const alex = knockoutRows.find((row) => row.participant === "Alex");
+
+    expect(alex?.aliveCount).toBe(2);
+    expect(alex?.championCount).toBe(0);
+  });
+
+  it("breaks ties by champion count, then alive count, then participant name", () => {
+    const tiedRows = buildLeaderboard(allocations, snapshot);
+    const knockoutRows = buildKnockoutLeaderboard(tiedRows);
+
+    expect(knockoutRows.map((row) => row.participant)).toEqual(["Alex", "Blair", "Casey"]);
+  });
   });
 });
 

@@ -126,6 +126,7 @@ export interface LeaderboardTeam {
   group: string | null;
   advancing: boolean;
   knockoutStatus: KnockoutStatus;
+  knockoutWins: number;
   isBonus: boolean;
   matched: boolean;
 }
@@ -139,6 +140,14 @@ export interface LeaderboardRow {
   activeTeams: number;
   bestTeamPoints: number;
   teams: LeaderboardTeam[];
+}
+
+export interface KnockoutLeaderboardRow {
+  rank: number;
+  participant: string;
+  knockoutWins: number;
+  aliveCount: number;
+  championCount: number;
 }
 
 const TEAM_ALIASES = new Map<string, string>([
@@ -227,7 +236,7 @@ export function buildLeaderboard(
 ): LeaderboardRow[] {
   const teamsByName = new Map(snapshot.teams.map((team) => [normalizeTeamName(team.name), team]));
   const standingByTeamId = new Map<string, { group: string; standing: GroupStanding }>();
-  const { eliminatedTeamIds, championTeamId } = computeKnockoutOutcomes(snapshot);
+  const { eliminatedTeamIds, championTeamId, winsByTeamId } = computeKnockoutOutcomes(snapshot);
 
   snapshot.groups.forEach((group) => {
     group.teams.forEach((standing) => {
@@ -266,6 +275,7 @@ export function buildLeaderboard(
         group: groupInfo?.group ?? null,
         advancing,
         knockoutStatus,
+        knockoutWins: matchedTeam ? (winsByTeamId.get(matchedTeam.id) ?? 0) : 0,
         isBonus,
         matched: Boolean(matchedTeam && standing),
       };
@@ -304,8 +314,10 @@ export function buildLeaderboard(
 function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
   eliminatedTeamIds: Set<string>;
   championTeamId: string | null;
+  winsByTeamId: Map<string, number>;
 } {
   const eliminatedTeamIds = new Set<string>();
+  const winsByTeamId = new Map<string, number>();
   let championTeamId: string | null = null;
 
   snapshot.matches.forEach((match) => {
@@ -336,13 +348,34 @@ function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
     }
 
     eliminatedTeamIds.add(loserId);
+    winsByTeamId.set(winnerId, (winsByTeamId.get(winnerId) ?? 0) + 1);
 
     if (match.matchday === "Final") {
       championTeamId = winnerId;
     }
   });
 
-  return { eliminatedTeamIds, championTeamId };
+  return { eliminatedTeamIds, championTeamId, winsByTeamId };
+}
+
+export function buildKnockoutLeaderboard(rows: LeaderboardRow[]): KnockoutLeaderboardRow[] {
+  const knockoutRows = rows.map((row) => ({
+    participant: row.participant,
+    knockoutWins: row.teams.reduce((sum, team) => sum + team.knockoutWins, 0),
+    aliveCount: row.teams.filter((team) => team.knockoutStatus === "alive").length,
+    championCount: row.teams.filter((team) => team.knockoutStatus === "champion").length,
+  }));
+
+  knockoutRows.sort((a, b) => {
+    return (
+      b.knockoutWins - a.knockoutWins ||
+      b.championCount - a.championCount ||
+      b.aliveCount - a.aliveCount ||
+      a.participant.localeCompare(b.participant)
+    );
+  });
+
+  return knockoutRows.map((row, index) => ({ ...row, rank: index + 1 }));
 }
 
 function numberValue(value: string | number | undefined): number {
