@@ -164,7 +164,61 @@ describe("buildLeaderboard", () => {
           stadiumId: null,
           finished: true,
           status: "finished",
-          type: "knockout",
+          type: "final",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const czechia = alex.teams.find((team) => team.name === "Czechia");
+
+    expect(czechia?.knockoutStatus).toBe("champion");
+  });
+
+  it("marks a team eliminated after losing a finished match tagged with the live API's stage-specific type (e.g. r16, qf)", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "210",
+          homeTeamId: "1",
+          awayTeamId: "99",
+          homeScore: 1,
+          awayScore: 2,
+          group: null,
+          matchday: "7",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "r16",
+        },
+      ],
+    };
+
+    const [alex] = buildLeaderboard(allocations, snapshotWithKnockouts);
+    const france = alex.teams.find((team) => team.name === "France");
+
+    expect(france?.knockoutStatus).toBe("eliminated");
+  });
+
+  it("marks a team champion after winning a finished match with the live API's final type, even when matchday is a plain round number", () => {
+    const snapshotWithKnockouts: TournamentSnapshot = {
+      ...snapshot,
+      matches: [
+        {
+          id: "211",
+          homeTeamId: "2",
+          awayTeamId: "98",
+          homeScore: 3,
+          awayScore: 1,
+          group: null,
+          matchday: "9",
+          kickoff: null,
+          stadiumId: null,
+          finished: true,
+          status: "finished",
+          type: "final",
         },
       ],
     };

@@ -321,7 +321,10 @@ function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
   let championTeamId: string | null = null;
 
   snapshot.matches.forEach((match) => {
-    if (match.type !== "knockout" || !match.finished) {
+    // The live API tags knockout-stage matches with stage-specific type values
+    // (r32, r16, qf, sf, third, final) rather than a generic "knockout" label,
+    // so anything that isn't a group match counts as a knockout match.
+    if (match.type === "group" || !match.finished) {
       return;
     }
 
@@ -350,7 +353,9 @@ function computeKnockoutOutcomes(snapshot: TournamentSnapshot): {
     eliminatedTeamIds.add(loserId);
     winsByTeamId.set(winnerId, (winsByTeamId.get(winnerId) ?? 0) + 1);
 
-    if (match.matchday === "Final") {
+    // The live API identifies the final by type ("final"), not by a
+    // matchday label of "Final" (matchday is just a numeric round string).
+    if (match.type === "final") {
       championTeamId = winnerId;
     }
   });
