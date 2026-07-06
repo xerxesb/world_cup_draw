@@ -183,6 +183,9 @@ p {
 }
 
 .panelHeader h2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 24px;
   line-height: 1;
   text-transform: uppercase;
@@ -192,6 +195,44 @@ p {
   flex: 0 0 auto;
   color: var(--pitch);
 }
+
+.infoTrigger {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid rgba(17, 24, 25, 0.3);
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--muted);
+  cursor: help;
+  text-transform: none;
+}
+
+.infoTrigger:hover,
+.infoTrigger:focus-visible {
+  border-color: var(--pitch);
+  color: var(--pitch);
+}
+
+.infoBubble {
+  position: fixed;
+  z-index: 1000;
+  padding: 10px 12px;
+  border: 1px solid rgba(17, 24, 25, 0.3);
+  background: var(--panel-strong);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: none;
+  white-space: pre-line;
+  max-height: 80vh;
+  overflow-y: auto;
+  pointer-events: none;
+}
+
 
 .leaderboardPanel {
   display: grid;

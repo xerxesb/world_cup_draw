@@ -2,6 +2,7 @@ import { buildLeaderboard, type Allocation, type LeaderboardRow, type Tournament
 
 export interface SideAward {
   award: string;
+  meaning: string;
   winnerRule: string;
   winner: string | null;
 }

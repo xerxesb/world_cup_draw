@@ -8,7 +8,12 @@ const dashboardData: DashboardData = {
     { participant: "Alex Gardner", tierA: "Belgium", tierB: "South Korea", tierC: "Uzbekistan", bonus: [] },
   ],
   awards: [
-    { award: "Spreadsheet Champion", winnerRule: "Person whose teams earn the most total points", winner: null },
+    {
+      award: "Spreadsheet Champion",
+      meaning: "For quietly out-scoring everyone across all three teams.",
+      winnerRule: "Person whose teams earn the most total points",
+      winner: null,
+    },
   ],
   snapshot: {
     generatedAt: "2026-06-17T00:00:00.000Z",

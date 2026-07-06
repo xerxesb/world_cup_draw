@@ -1,5 +1,6 @@
 import { Trophy } from "lucide-react";
 import { displayTeamName } from "../lib/display";
+import { InfoTooltip } from "./InfoTooltip";
 import type { LeaderboardRow } from "../lib/tournament";
 
 interface LeaderboardProps {
@@ -12,7 +13,13 @@ export function Leaderboard({ rows }: LeaderboardProps) {
       <div className="panelHeader">
         <div>
           <p className="eyebrow">Sweep table</p>
-          <h2 id="leaderboard-title">Leaderboard</h2>
+          <h2 id="leaderboard-title">
+            Leaderboard
+            <InfoTooltip
+              label="How the sweep leaderboard is scored"
+              text="Each person owns 3 tiered teams (A/B/C) plus any bonus teams. Points = each team's group-stage points, plus +3 for every owned team that reached the knockout rounds. This table froze when the group stage ended; ties are broken by teams still advancing, then best single-team score."
+            />
+          </h2>
         </div>
         <Trophy aria-hidden="true" />
       </div>

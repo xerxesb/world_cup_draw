@@ -1,5 +1,6 @@
 import { Medal } from "lucide-react";
 import type { SideAward } from "../lib/data";
+import { InfoTooltip } from "./InfoTooltip";
 import type { LeaderboardRow } from "../lib/tournament";
 
 interface AwardsProps {
@@ -9,13 +10,17 @@ interface AwardsProps {
 
 export function Awards({ awards, leaderboard }: AwardsProps) {
   const spreadsheetLeader = leaderboard[0]?.participant ?? "TBC";
+  const tooltipText = buildAwardsTooltipText(awards);
 
   return (
     <section className="panel awardsPanel" aria-labelledby="awards-title">
       <div className="panelHeader compact">
         <div>
           <p className="eyebrow">Side quests</p>
-          <h2 id="awards-title">Awards</h2>
+          <h2 id="awards-title">
+            Awards
+            <InfoTooltip label="How side awards are decided" text={tooltipText} width={320} />
+          </h2>
         </div>
         <Medal aria-hidden="true" />
       </div>
@@ -37,4 +42,13 @@ function guessAwardLeader(award: string, spreadsheetLeader: string): string {
   }
 
   return "TBC";
+}
+
+function buildAwardsTooltipText(awards: SideAward[]): string {
+  const intro = "Bonus office bragging rights, decided by hand rather than the live data feed:";
+  const entries = awards.map(
+    (award) => `${award.award} — ${award.meaning} Winner: ${award.winnerRule}.`,
+  );
+
+  return [intro, ...entries].join("\n\n");
 }

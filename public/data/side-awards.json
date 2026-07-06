@@ -1,36 +1,43 @@
 [
   {
     "award": "Supreme Overlord",
+    "meaning": "Ultimate bragging rights for whoever owns the eventual champions.",
     "winnerRule": "Owns the World Cup winner",
     "winner": null
   },
   {
     "award": "Glorious Almost",
+    "meaning": "For getting agonisingly close to glory and missing out.",
     "winnerRule": "Owns the runner-up",
     "winner": null
   },
   {
     "award": "Chaos Merchant",
+    "meaning": "For backing the underdog behind the tournament's biggest shock result.",
     "winnerRule": "Owns the biggest upset",
     "winner": null
   },
   {
     "award": "Flat Track Bully",
+    "meaning": "For thumping an opponent by the widest margin of any match.",
     "winnerRule": "Owns the biggest winning margin",
     "winner": null
   },
   {
     "award": "Heroic Failure",
+    "meaning": "Consolation prize for owning the tournament's worst-performing team.",
     "winnerRule": "Owns the worst team",
     "winner": null
   },
   {
     "award": "VAR Victim",
+    "meaning": "For the most controversial or unlucky exit from the tournament.",
     "winnerRule": "Most controversial exit",
     "winner": null
   },
   {
     "award": "Spreadsheet Champion",
+    "meaning": "For quietly out-scoring everyone across all three teams.",
     "winnerRule": "Person whose teams earn the most total points",
     "winner": null
   }

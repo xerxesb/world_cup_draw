@@ -1,4 +1,5 @@
 import { Swords } from "lucide-react";
+import { InfoTooltip } from "./InfoTooltip";
 import type { KnockoutLeaderboardRow } from "../lib/tournament";
 
 interface KnockoutLeaderboardProps {
@@ -11,7 +12,13 @@ export function KnockoutLeaderboard({ rows }: KnockoutLeaderboardProps) {
       <div className="panelHeader compact">
         <div>
           <p className="eyebrow">Bracket progress</p>
-          <h2 id="knockout-title">Knockout Watch</h2>
+          <h2 id="knockout-title">
+            Knockout Watch
+            <InfoTooltip
+              label="How Knockout Watch is scored"
+              text="Ranks people by how many knockout matches their owned teams have won (penalty shootouts count as wins). Ties are broken by having the champion, then teams still alive, then name. This is separate from the frozen Sweep leaderboard above and doesn't change its points."
+            />
+          </h2>
         </div>
         <Swords aria-hidden="true" />
       </div>
