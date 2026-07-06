@@ -35,8 +35,15 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ fromJSON(steps.deployment.outputs.outputs).page_url }}
     runs-on: ubuntu-latest
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        # actions/deploy-pages intermittently fails with "Deployment failed, try
+        # again later" (known upstream issue: actions/deploy-pages#418).
+        # Retry a few times before giving up.
+        uses: Wandalen/wretry.action@v3.8.0
+        with:
+          action: actions/deploy-pages@v5
+          attempt_limit: 3
+          attempt_delay: 15000
