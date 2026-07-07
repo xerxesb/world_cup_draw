@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:37:25.905Z",
+  "generatedAt": "2026-07-07T16:35:53.754Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -2155,14 +2155,14 @@
       "id": "95",
       "homeTeamId": "37",
       "awayTeamId": "26",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 1,
       "group": "R16",
       "matchday": "5",
       "kickoff": "2026-07-07T12:00:00",
       "stadiumId": "7",
       "finished": false,
-      "status": "notstarted",
+      "status": "live",
       "type": "r16"
     },
     {
