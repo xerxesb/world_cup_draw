@@ -3,7 +3,7 @@ name: Refresh World Cup Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/10 * * * *"
 
 permissions:
   contents: write
@@ -28,6 +28,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run refresh:data
+        continue-on-error: true
       - run: npm test -- --run
       - run: npm run build
       - name: Commit refreshed data
