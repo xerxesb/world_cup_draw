@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T08:22:40.319Z",
+  "generatedAt": "2026-07-11T09:05:11.232Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -2218,7 +2218,7 @@
       "kickoff": "2026-07-11T17:00:00",
       "stadiumId": "8",
       "finished": false,
-      "status": "notstarted",
+      "status": "live",
       "type": "qf"
     },
     {
