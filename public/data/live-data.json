@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T18:35:42.463Z",
+  "generatedAt": "2026-07-15T19:05:00.288Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -2253,14 +2253,14 @@
       "id": "102",
       "homeTeamId": "45",
       "awayTeamId": "37",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 0,
       "group": "SF",
       "matchday": "7",
       "kickoff": "2026-07-15T15:00:00",
       "stadiumId": "7",
       "finished": false,
-      "status": "notstarted",
+      "status": "live",
       "type": "sf"
     },
     {
