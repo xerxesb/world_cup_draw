@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T18:31:49.000Z",
+  "generatedAt": "2026-07-19T19:04:07.878Z",
   "source": "worldcup26-api",
   "stale": false,
   "teams": [
@@ -2281,8 +2281,8 @@
       "id": "104",
       "homeTeamId": "29",
       "awayTeamId": "37",
-      "homeScore": 0,
-      "awayScore": 0,
+      "homeScore": null,
+      "awayScore": null,
       "group": "FINAL",
       "matchday": "9",
       "kickoff": "2026-07-19T15:00:00",
